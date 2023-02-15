@@ -1,0 +1,16 @@
+@import './base.css';
+
+body{
+  background: url("/src/assets/images/background.PNG");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: 6em;
+}
+
+@media (min-width: 720px){
+ body{
+  background-size: 9em;
+ }
+  
+}
