@@ -1,5 +1,11 @@
-<script setup>
+<script>
 import MainPage from './components/MainPage.vue';
+import Navbar from './components/NavBar.vue'
+
+export default ({
+  components: { Navbar, MainPage}
+})
+
 </script>
 
 <template>
@@ -10,6 +16,7 @@ import MainPage from './components/MainPage.vue';
 
   <main>
     <MainPage/>
+    <Navbar/>
   </main>
 </template>
 
@@ -40,7 +47,7 @@ header h3{
 @media (min-width: 720px) {
 
 header{
-  height: 9em;
+  height: 11em;
 }
 
 header h1{
