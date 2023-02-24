@@ -39,9 +39,9 @@ export default {
             <div class="items">
                 <EmailIcon />
             </div>
-            <button class="item-bar" id="#menu" @click="showMenu()">
+            <div class="item-bar" id="#menu" @click="showMenu()">
                 <BarsIcon />
-            </button>
+            </div>
         </div>
 
 
@@ -51,13 +51,13 @@ export default {
                     <a class="text" href="#">SOBRE MI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="text" href="#">FORMACIÓN</a>
+                    <a class="text" href="#/training">FORMACIÓN</a>
                 </li>
                 <li class="nav-item">
-                    <a class="text" href="#">PROYECTOS</a>
+                    <a class="text" href="#/projects">PROYECTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="text" href="">TECNOLOGÍAS</a>
+                    <a class="text" href="#/technologies">TECNOLOGÍAS</a>
                 </li>
             </ul>
         </div>
@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 #navbar {
-    background-color: #e0e0e07f;
+    background-color: #abababd1;
     background-blend-mode: darken;
     top: 2em;
 }
@@ -102,8 +102,12 @@ li:hover {
     background-color: rgba(255, 252, 252, 0.952);
 }
 .nav-container-icons {
-    display: inline-flex;
+    display: flex;
     width: 100%;
+}
+
+.nav-container-icons .item-bar{
+    justify-content: end;
 }
 
 .items {

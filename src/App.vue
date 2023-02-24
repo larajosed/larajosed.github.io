@@ -1,9 +1,13 @@
 <script>
-import MainPage from './components/MainPage.vue';
-import Navbar from './components/NavBar.vue'
+import Navbar from './components/NavBar.vue';
+
 
 export default ({
-  components: { Navbar, MainPage}
+  components: { Navbar},
+  data () {
+    return {
+    }
+  }
 })
 
 </script>
@@ -15,8 +19,10 @@ export default ({
   </header>
 
   <main>
-    <MainPage/>
     <Navbar/>
+    <section>
+      <RouterView></RouterView>
+    </section>
   </main>
 </template>
 
