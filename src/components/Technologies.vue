@@ -3,8 +3,8 @@
         <div>
             <h3>Tecnologias</h3>
         </div>
-        <div>
-            <div>Frontend
+        <div class="container-technologies">
+            <div class="container-column"> <h1>Frontend</h1> 
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/frontend/angular.png" alt="ANGULAR">
                     <img class="icon" src="../assets/images/frontend/bootstrap.png" alt="BOOTSTRAP">
@@ -12,7 +12,7 @@
                     <img class="icon" src="../assets/images/frontend/d3.png" alt="D3">
                 </div>
             </div>
-            <div>Backend
+            <div class="container-column"><h1>Backend</h1>
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/backend/ExpressJS.png" alt="EXPRESSJS">
                     <img class="icon" src="../assets/images/backend/nodejs.png" alt="NODEJS">
@@ -20,13 +20,13 @@
                     <img class="icon" src="../assets/images/backend/c.png" alt="C#">
                 </div>
             </div>
-            <div>BBDD
+            <div class="container-column"><h1>BBDD</h1>
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/bbdd/mysql.png" alt="MYSQL">
                     <img class="icon" src="../assets/images/bbdd/MongoDB.png" alt="MONGODB">
                 </div>
             </div>
-            <div>Otros
+            <div class="container-column"><h1>Otros</h1>
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/otros/bamboo.png" alt="BAMBOO">
                     <img class="icon" src="../assets/images/otros/Bitbucket.png" alt="BITBUCKET">
@@ -39,9 +39,39 @@
     </section>
 </template>
 <style scoped>
+
+h3{
+    text-align: center;
+    align-items: center;
+}
+.container-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    display: -ms-flex;
+    display: -webkit-flex;
+}
+
+.container-column {
+    width: 50%;
+}
+.container-column h1 {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.icon-container {
+    border: 1em solid rgb(255, 255, 255);
+    background-color: #F1F1F1;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .icon {
-   height: 4em;
-   width: 4em;
-   margin-right: 1em
+    height: 4em;
+    width: 6em;
+    margin: 1em;
 }
 </style>
