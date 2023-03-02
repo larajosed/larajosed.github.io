@@ -78,9 +78,5 @@ section {
       margin: 2em;
       text-align: justify;
    }
-
-   .logo-container {}
-
-   .text-container {}
 }
 </style>

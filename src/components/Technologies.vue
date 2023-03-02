@@ -4,7 +4,8 @@
             <h3>Tecnologias</h3>
         </div>
         <div class="container-technologies">
-            <div class="container-column"> <h1>Frontend</h1> 
+            <div class="container-column">
+                <h1>Frontend</h1>
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/frontend/angular.png" alt="ANGULAR">
                     <img class="icon" src="../assets/images/frontend/bootstrap.png" alt="BOOTSTRAP">
@@ -12,7 +13,8 @@
                     <img class="icon" src="../assets/images/frontend/d3.png" alt="D3">
                 </div>
             </div>
-            <div class="container-column"><h1>Backend</h1>
+            <div class="container-column">
+                <h1>Backend</h1>
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/backend/ExpressJS.png" alt="EXPRESSJS">
                     <img class="icon" src="../assets/images/backend/nodejs.png" alt="NODEJS">
@@ -20,13 +22,15 @@
                     <img class="icon" src="../assets/images/backend/c.png" alt="C#">
                 </div>
             </div>
-            <div class="container-column"><h1>BBDD</h1>
+            <div class="container-column">
+                <h1>BBDD</h1>
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/bbdd/mysql.png" alt="MYSQL">
                     <img class="icon" src="../assets/images/bbdd/MongoDB.png" alt="MONGODB">
                 </div>
             </div>
-            <div class="container-column"><h1>Otros</h1>
+            <div class="container-column">
+                <h1>Otros</h1>
                 <div class="icon-container">
                     <img class="icon" src="../assets/images/otros/bamboo.png" alt="BAMBOO">
                     <img class="icon" src="../assets/images/otros/Bitbucket.png" alt="BITBUCKET">
@@ -37,13 +41,27 @@
             </div>
         </div>
     </section>
-</template>
-<style scoped>
 
-h3{
+
+    <div class="center">
+        <vs-tooltip>
+            <vs-button flat>
+                Do hover here
+            </vs-button>
+            <template #tooltip>
+                This is a beautiful button
+            </template>
+        </vs-tooltip>
+    </div>
+</template>
+
+
+<style scoped>
+h3 {
     text-align: center;
     align-items: center;
 }
+
 .container-technologies {
     display: flex;
     flex-wrap: wrap;
@@ -51,11 +69,13 @@ h3{
     justify-content: center;
     display: -ms-flex;
     display: -webkit-flex;
+    
 }
 
 .container-column {
     width: 50%;
 }
+
 .container-column h1 {
     align-items: center;
     text-align: center;
@@ -63,21 +83,40 @@ h3{
 }
 
 .icon-container {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     border: 1em solid rgb(255, 255, 255);
     background-color: #F1F1F1;
-    text-align: center;
-    margin-bottom: 1em;
     display: flex;
-    justify-content: center;
 }
 
 .icon {
-    max-height: 4em;
-    max-width: 5em;
+    max-height: 3em;
+    max-width: 4em;
     margin: 1em;
     height: auto;
     width: auto;
     display: inline-block;
     object-fit: contain;
+}
+
+
+
+@media (min-width: 720px) {
+   /*  .icon-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1em;
+
+    } */
+
+    .icon {
+        max-height: 4em;
+        max-width: 5em;
+    }
 }
 </style>
