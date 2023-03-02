@@ -67,11 +67,17 @@ h3{
     background-color: #F1F1F1;
     text-align: center;
     margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 .icon {
-    height: 4em;
-    width: 6em;
+    max-height: 4em;
+    max-width: 5em;
     margin: 1em;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    object-fit: contain;
 }
 </style>
