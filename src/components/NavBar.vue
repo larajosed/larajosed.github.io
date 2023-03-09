@@ -48,7 +48,7 @@ export default {
                 </a>
             </div>
             <div class="items">
-                <a href="https://www.linkedin.com/in/joselara11/" target="_blank">
+                <a href="https://linkedin.com/in/joselarameza" target="_blank">
                     <LinkedinIcon />
                 </a>
             </div>
