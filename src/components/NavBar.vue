@@ -4,15 +4,19 @@ import PhoneIcon from './icons/PhoneIcon.vue'
 import GithubIcon from './icons/GithubIcon.vue'
 import EmailIcon from './icons/EmailIcon.vue'
 import About from './About.vue'
+import LinkedinIcon from './icons/LinkedinIcon.vue'
+import WhatsappIcon from './icons/WhatsappIcon.vue'
 
 export default {
     components: {
-        BarsIcon,
-        PhoneIcon,
-        GithubIcon,
-        EmailIcon,
-        About
-    },
+    BarsIcon,
+    PhoneIcon,
+    GithubIcon,
+    EmailIcon,
+    About,
+    LinkedinIcon,
+    WhatsappIcon
+},
     data() {
         return {
             show: true
@@ -34,13 +38,23 @@ export default {
                 <a href="tel:+34693537526"><phone-icon /></a>
             </div>
             <div class="items">
-                <a href="https://github.com/larajosed">
+                <a href="https://github.com/larajosed" target="_blank">
                     <GithubIcon />
                 </a>
             </div>
             <div class="items">
                 <a href="mailto:larajosed@gmail.com">
                     <EmailIcon />
+                </a>
+            </div>
+            <div class="items">
+                <a href="https://www.linkedin.com/in/joselara11/" target="_blank">
+                    <LinkedinIcon />
+                </a>
+            </div>
+            <div class="items">
+                <a href="https://api.whatsapp.com/send/?phone=34693537526">
+                    <WhatsappIcon/>
                 </a>
             </div>
             <div class="item-bar" id="#menu" @click="showMenu()">
