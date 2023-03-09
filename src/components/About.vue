@@ -24,12 +24,14 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 1em;
 
 }
 
 .text {
   text-align: justify;
   max-width: 35em;
+  padding: 1em;
 }
 
 .container.img{
