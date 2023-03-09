@@ -6,18 +6,18 @@
          </div>
          <div class="text-container">
             <b>Ilerna FP Online : Técnico Superior en Desarrollo de Aplicaciones Web.</b>
-            <p>Actualmente aprendiendo a desarrollar, implantar, y mantener aplicaciones web,
-               con independencia del modelo empleado y utilizando tecnologías específicas en en el frontend C#. Para el
-               backend utiizando ExpressJs y NodeJs y en base de datos MySQL. Garantizando el acceso a los datos de forma
-               segura y cumpliendo
-               los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos.
+            <p>Actualmente desarrollando, implantando, y manteniendo aplicaciones web,
+               con independencia del modelo empleado y utilizando tecnologías específicas. Para el
+               backend utiizando ExpressJs y NodeJs y en base de datos MySQL. Garantizando el acceso a los datos de
+               forma
+               segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares
+               establecidos.
             </p>
             <div>
                <i>Sep. 2022 - Actualmente.</i>
                <br>
                <i>Madrid, España.</i>
             </div>
-
          </div>
       </div>
    </section>
@@ -45,21 +45,21 @@
 <style scoped>
 section {
    width: 100%;
-   display: flex;
-   flex-wrap: wrap;
 }
 
 .icon {
    height: 4em;
    width: 4em;
-   margin-right: 1em
+   margin-right: 1em;
+   margin-left: 0.5em;
 }
 
 .text {
    display: flex;
    margin-top: 2em;
    max-width: 35em;
-
+   padding-inline-end: 1em;
+   text-align: justify;
 }
 
 @media (min-width: 720px) {
