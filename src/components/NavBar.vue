@@ -7,12 +7,12 @@ import About from './About.vue'
 
 export default {
     components: {
-    BarsIcon,
-    PhoneIcon,
-    GithubIcon,
-    EmailIcon,
-    About
-},
+        BarsIcon,
+        PhoneIcon,
+        GithubIcon,
+        EmailIcon,
+        About
+    },
     data() {
         return {
             show: true
@@ -31,13 +31,17 @@ export default {
     <nav class="navbar" id="navbar">
         <div class="nav-container-icons">
             <div class="items">
-                <phone-icon></phone-icon>
+                <a href="tel:+34693537526"><phone-icon /></a>
             </div>
             <div class="items">
-                <GithubIcon />
+                <a href="https://github.com/larajosed">
+                    <GithubIcon />
+                </a>
             </div>
             <div class="items">
-                <EmailIcon />
+                <a href="mailto:larajosed@gmail.com">
+                    <EmailIcon />
+                </a>
             </div>
             <div class="item-bar" id="#menu" @click="showMenu()">
                 <BarsIcon />
@@ -101,12 +105,13 @@ li:hover a {
 li:hover {
     background-color: rgba(255, 252, 252, 0.952);
 }
+
 .nav-container-icons {
     display: flex;
     width: 100%;
 }
 
-.nav-container-icons .item-bar{
+.nav-container-icons .item-bar {
     justify-content: end;
 }
 
@@ -114,7 +119,6 @@ li:hover {
     width: 4em;
     margin-top: 0.5em;
     margin-left: 0.5em;
-
 }
 
 .item-bar {
@@ -123,5 +127,4 @@ li:hover {
     text-align: end;
     margin-right: 0.5em;
     border: 0;
-}
-</style>
+}</style>
