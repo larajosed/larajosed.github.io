@@ -42,17 +42,6 @@
         </div>
     </section>
 
-
-    <div class="center">
-        <vs-tooltip>
-            <vs-button flat>
-                Do hover here
-            </vs-button>
-            <template #tooltip>
-                This is a beautiful button
-            </template>
-        </vs-tooltip>
-    </div>
 </template>
 
 

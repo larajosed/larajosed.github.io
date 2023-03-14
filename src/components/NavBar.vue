@@ -35,11 +35,13 @@ export default {
     <nav class="navbar" id="navbar">
         <div class="nav-container-icons">
             <div class="items">
-                <a href="tel:+34693537526"><phone-icon /></a>
-            </div>
-            <div class="items">
                 <a href="https://github.com/larajosed" target="_blank">
                     <GithubIcon />
+                </a>
+            </div>
+            <div class="items">
+                <a href="https://linkedin.com/in/joselarameza" target="_blank">
+                    <LinkedinIcon />
                 </a>
             </div>
             <div class="items">
@@ -48,9 +50,7 @@ export default {
                 </a>
             </div>
             <div class="items">
-                <a href="https://linkedin.com/in/joselarameza" target="_blank">
-                    <LinkedinIcon />
-                </a>
+                <a href="tel:+34693537526"><phone-icon /></a>
             </div>
             <div class="items">
                 <a href="https://api.whatsapp.com/send/?phone=34693537526">
