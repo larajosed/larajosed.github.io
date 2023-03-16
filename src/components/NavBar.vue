@@ -9,17 +9,17 @@ import WhatsappIcon from './icons/WhatsappIcon.vue'
 
 export default {
     components: {
-    BarsIcon,
-    PhoneIcon,
-    GithubIcon,
-    EmailIcon,
-    About,
-    LinkedinIcon,
-    WhatsappIcon
-},
+        BarsIcon,
+        PhoneIcon,
+        GithubIcon,
+        EmailIcon,
+        About,
+        LinkedinIcon,
+        WhatsappIcon
+    },
     data() {
         return {
-            show: true
+            show: false
         }
     },
     methods: {
@@ -54,7 +54,7 @@ export default {
             </div>
             <div class="items">
                 <a href="https://api.whatsapp.com/send/?phone=34693537526">
-                    <WhatsappIcon/>
+                    <WhatsappIcon />
                 </a>
             </div>
             <div class="item-bar" id="#menu" @click="showMenu()">
@@ -103,7 +103,7 @@ export default {
     padding: 0.5em;
 }
 
-a {
+ a {
     color: black;
 }
 
@@ -111,14 +111,20 @@ a:link {
     text-decoration: none;
 }
 
+li {
+    transition: 0.7s
+}
+li:hover {
+    background-color: rgb(249, 249, 249);
+}
+
 li:hover a {
     color: rgb(126, 128, 130);
     text-shadow: 0px 4px 3px rgb(179 175 175);
+    transition: 0.7s;
 }
 
-li:hover {
-    background-color: rgba(255, 252, 252, 0.952);
-}
+
 
 .nav-container-icons {
     display: flex;
@@ -135,10 +141,18 @@ li:hover {
     margin-left: 0.5em;
 }
 
+.items a {
+    transition: 0.5s;
+}
+.items a:hover {
+    color: rgb(126, 128, 130);
+} 
+
 .item-bar {
     width: 100%;
     margin-top: 0.5em;
     text-align: end;
     margin-right: 0.5em;
     border: 0;
-}</style>
+}
+</style>
