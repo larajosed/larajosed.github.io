@@ -77,6 +77,9 @@ export default {
                 <li class="nav-item">
                     <a class="text" href="#/technologies">TECNOLOGÍAS</a>
                 </li>
+                <li class="nav-item">
+                    <a class="text" href="#/experience">EXPERIENCIA</a>
+                </li>
             </ul>
         </div>
     </nav>

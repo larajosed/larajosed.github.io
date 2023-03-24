@@ -2,7 +2,8 @@ import * as VueRouter from 'vue-router'
 import About from './components/About.vue';
 import Training from './components/Training.vue';
 import Projects from './components/Projects.vue';
-import Technologies from './components/Technologies.vue'
+import Technologies from './components/Technologies.vue';
+import Experience from './components/Experience.vue';
 
 const routes =[
   {
@@ -29,6 +30,11 @@ const routes =[
     path: "/technologies",
     name: "technologies",
     component: Technologies
+  },
+  {
+    path: "/experience",
+    name: "experience",
+    component: Experience
   }
 ]
 
