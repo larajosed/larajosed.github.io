@@ -43,23 +43,6 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="text">
-            <div class="logo-container">
-                <img class="icon" src="../assets/images/MyGym.jpg" alt="MYGYMAPP">
-            </div>
-            <div class="text-container">
-                <b>Desarrollador Full Stack - MyGym App</b>
-                <p> Es una aplicación que permite consultar ejercicios y rutinas para entrenamiento   de   fitness   con    referencias    multimedia. La aplicación se compone de una aplicación de front desarrollada en Angular 11 con maquetación responsive con Bootstrap y un back desarrollado con NodeJS haciendo uso de Express para exponer una API que permite consultar ejercicios y rutinas de una base de datos MySQL.
-                </p>
-                <div>
-                    <i>Dic. 2021 - Feb. 2022</i>
-                    <br>
-                    <i>Madrid, España.</i>
-                </div>
-            </div>
-        </div>
-    </section>
 </template>
 
 <style scoped>
@@ -68,10 +51,13 @@ section {
 }
 
 .icon {
-    height: 4em;
-    width: 4em;
-    margin-right: 1em;
-    margin-left: 0.5em;
+    max-height: 3em;
+    max-width: 4em;
+    margin: 1em;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    object-fit: contain;
 }
 
 .text {

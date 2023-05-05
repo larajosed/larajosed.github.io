@@ -48,10 +48,13 @@ section {
 }
 
 .icon {
-   height: 4em;
-   width: 4em;
-   margin-right: 1em;
-   margin-left: 0.5em;
+   max-height: 3em;
+    max-width: 4em;
+    margin: 1em;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    object-fit: contain;
 }
 
 .text {
