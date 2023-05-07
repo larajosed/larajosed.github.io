@@ -72,14 +72,15 @@ export default {
                     <a class="text" href="#/training">FORMACIÓN</a>
                 </li>
                 <li class="nav-item">
+                    <a class="text" href="#/experience">EXPERIENCIA PROFESIONAL</a>
+                </li>
+                <li class="nav-item">
                     <a class="text" href="#/projects">PROYECTOS</a>
                 </li>
                 <li class="nav-item">
                     <a class="text" href="#/technologies">TECNOLOGÍAS</a>
                 </li>
-                <li class="nav-item">
-                    <a class="text" href="#/experience">EXPERIENCIA</a>
-                </li>
+                
             </ul>
         </div>
     </nav>
@@ -157,5 +158,13 @@ li:hover a {
     text-align: end;
     margin-right: 0.5em;
     border: 0;
+}
+
+.item-bar{
+    transition: 0.5s;
+}
+
+.item-bar:hover {
+    color: rgb(126, 128, 130);
 }
 </style>
