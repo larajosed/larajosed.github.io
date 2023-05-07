@@ -4,18 +4,22 @@ import PhoneIcon from './icons/PhoneIcon.vue'
 import GithubIcon from './icons/GithubIcon.vue'
 import EmailIcon from './icons/EmailIcon.vue'
 import About from './About.vue'
+import LinkedinIcon from './icons/LinkedinIcon.vue'
+import WhatsappIcon from './icons/WhatsappIcon.vue'
 
 export default {
     components: {
-    BarsIcon,
-    PhoneIcon,
-    GithubIcon,
-    EmailIcon,
-    About
-},
+        BarsIcon,
+        PhoneIcon,
+        GithubIcon,
+        EmailIcon,
+        About,
+        LinkedinIcon,
+        WhatsappIcon
+    },
     data() {
         return {
-            show: true
+            show: false
         }
     },
     methods: {
@@ -31,13 +35,27 @@ export default {
     <nav class="navbar" id="navbar">
         <div class="nav-container-icons">
             <div class="items">
-                <phone-icon></phone-icon>
+                <a href="https://github.com/larajosed" target="_blank">
+                    <GithubIcon />
+                </a>
             </div>
             <div class="items">
-                <GithubIcon />
+                <a href="https://linkedin.com/in/joselarameza" target="_blank">
+                    <LinkedinIcon />
+                </a>
             </div>
             <div class="items">
-                <EmailIcon />
+                <a href="mailto:larajosed@gmail.com">
+                    <EmailIcon />
+                </a>
+            </div>
+            <div class="items">
+                <a href="tel:+34693537526"><phone-icon /></a>
+            </div>
+            <div class="items">
+                <a href="https://api.whatsapp.com/send/?phone=34693537526">
+                    <WhatsappIcon />
+                </a>
             </div>
             <div class="item-bar" id="#menu" @click="showMenu()">
                 <BarsIcon />
@@ -58,6 +76,9 @@ export default {
                 </li>
                 <li class="nav-item">
                     <a class="text" href="#/technologies">TECNOLOGÍAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text" href="#/experience">EXPERIENCIA</a>
                 </li>
             </ul>
         </div>
@@ -85,7 +106,7 @@ export default {
     padding: 0.5em;
 }
 
-a {
+ a {
     color: black;
 }
 
@@ -93,20 +114,27 @@ a:link {
     text-decoration: none;
 }
 
+li {
+    transition: 0.7s
+}
+li:hover {
+    background-color: rgb(249, 249, 249);
+}
+
 li:hover a {
     color: rgb(126, 128, 130);
     text-shadow: 0px 4px 3px rgb(179 175 175);
+    transition: 0.7s;
 }
 
-li:hover {
-    background-color: rgba(255, 252, 252, 0.952);
-}
+
+
 .nav-container-icons {
     display: flex;
     width: 100%;
 }
 
-.nav-container-icons .item-bar{
+.nav-container-icons .item-bar {
     justify-content: end;
 }
 
@@ -114,8 +142,14 @@ li:hover {
     width: 4em;
     margin-top: 0.5em;
     margin-left: 0.5em;
-
 }
+
+.items a {
+    transition: 0.5s;
+}
+.items a:hover {
+    color: rgb(126, 128, 130);
+} 
 
 .item-bar {
     width: 100%;
