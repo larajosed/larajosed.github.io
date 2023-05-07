@@ -3,10 +3,12 @@
     <div class="container-img">
       <img src="../assets/images/foto.jpg" alt="FOTO">
     </div>
-    <div class="text">Profesional en continua formación y con experiencia en el desarrollo de aplicaciones web full-stack.
-      Soy una persona resolutiva, acostumbrada a trabajar por proyectos y orientada a resultados.
-      Mis motivaciones profesionales son aportar valor a los proyectos a través del trabajo en equipo, así como continuar
-      desarrollándome profesionalmente.
+    <div class="text">
+      <p> Profesional en continua formación y con experiencia en el desarrollo de aplicaciones web full-stack.</p>
+      <p>Soy una persona resolutiva, acostumbrada a trabajar por proyectos y orientada a resultados.</p>
+      <p>Mis motivaciones profesionales son aportar valor a los proyectos a través del trabajo en equipo, así como
+        continuar
+        desarrollándome profesionalmente.</p>
     </div>
   </section>
 </template>
@@ -36,6 +38,7 @@ section {
   section {
     margin-top: 4em;
     background-color: #F1F1F1;
+    align-items: center;
   }
 
   .text {
