@@ -5,15 +5,15 @@
                 <img class="icon" src="../assets/images/amStore.jpg" alt="AMSTORE">
             </div>
             <div class="text-container">
-                <b>Desarrollador Full Stack - AM Store</b>
+                <b>AM Store</b>
                 <p> AM Store es una tienda online para la venta de ropa y complementos.
-                    Para la parte pública de la tienda, se desarrolla una aplicación front end con Angular 12 y Angular
-                    Material.
-                    Para la parte de back office (gestión de los pedidos, stock, gestión de catálogo) se cuenta con otra
-                    aplicación de front end desarrollada igualmente con Angular 12 y Angular Material.
-                    Ambas aplicaciones front trabajan contra un back end con una API Rest desarrollada con Spring Boot sobre
+                <p> Para la parte pública de la tienda, se desarrolla una aplicación front end con Angular 12 y Angular
+                    Material.</p>
+                <p>Para la parte de back office (gestión de los pedidos, stock, gestión de catálogo) se cuenta con otra
+                    aplicación de front end desarrollada igualmente con Angular 12 y Angular Material.</p>
+                <p>Ambas aplicaciones front trabajan contra un back end con una API Rest desarrollada con Spring Boot sobre
                     el framework Shopizr con una serie de servicios que permiten operaciones tales como la creación de
-                    nuevos pedidos, registro de usuarios, gestión de catálogo, etc. sobre una BBDD MySQL.
+                    nuevos pedidos, registro de usuarios, gestión de catálogo, etc. sobre una BBDD MySQL.</p>
                 </p>
             </div>
         </div>
@@ -24,13 +24,14 @@
                 <img class="icon" src="../assets/images/aplicacion.jpg" alt="AMSTORE">
             </div>
             <div class="text-container">
-                <b>Desarrollador Full Stack - MyGym App</b>
+                <b>MyGym App</b>
                 <p>
                     Es una aplicación que permite consultar ejercicios y rutinas para entrenamiento de fitness con
-                    referencias multimedia. La aplicación se compone de una aplicación de front desarrollada en Angular 11
-                    con maquetación responsive con Bootstrap y un back desarrollado con NodeJS haciendo uso de Express para
-                    exponer una API que permite consultar ejercicios y rutinas de una base de datos MySQL.
+                    referencias multimedia.
                 </p>
+                <p>La aplicación se compone de una aplicación de front desarrollada en Angular 11
+                    con maquetación responsive con Bootstrap y un back desarrollado con NodeJS haciendo uso de Express para
+                    exponer una API que permite consultar ejercicios y rutinas de una base de datos MySQL.</p>
             </div>
         </div>
     </section>
@@ -42,13 +43,9 @@ section {
 }
 
 .icon {
-    max-height: 3em;
-    max-width: 4em;
-    margin: 1em;
-    height: auto;
-    width: auto;
+    width: 4em;
+    margin-right: 1em;
     display: inline-block;
-    object-fit: contain;
 }
 
 .text {
