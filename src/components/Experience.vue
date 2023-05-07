@@ -55,7 +55,6 @@ section {
     width: 4em;
     margin-right: 1em;
    display: inline-block;
-    display: inline-block;
 }
 
 .text {
