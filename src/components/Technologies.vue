@@ -7,6 +7,7 @@
             <div class="container-column">
                 <h1>Frontend</h1>
                 <div class="icon-container">
+                    <img class="icon" src="../assets/images/frontend/jquery.png" alt="JQUERY">
                     <img class="icon" src="../assets/images/frontend/angular.png" alt="ANGULAR">
                     <img class="icon" src="../assets/images/frontend/bootstrap.png" alt="BOOTSTRAP">
                     <img class="icon" src="../assets/images/frontend/vue.png" alt="VUE">
@@ -20,6 +21,7 @@
                     <img class="icon" src="../assets/images/backend/nodejs.png" alt="NODEJS">
                     <img class="icon" src="../assets/images/backend/spring.png" alt="SPRING">
                     <img class="icon" src="../assets/images/backend/c.png" alt="C#">
+                    <img class="icon" src="../assets/images/backend/php.png" alt="PHP">
                 </div>
             </div>
             <div class="container-column">

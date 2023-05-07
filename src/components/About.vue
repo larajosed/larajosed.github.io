@@ -3,18 +3,11 @@
     <div class="container-img">
       <img src="../assets/images/foto.jpg" alt="FOTO">
     </div>
-    <div class="text">Soy una persona luchadora que le gusta asumir nuevos retos, con
-      ganas siempre de avanzar y crecer,
-      por eso he decidido entrar en el
-      sector de la tecnología y
-      convertirme en un Desarrollador
-      web.
-
-      Me encantaría tener la
-      oportunidad de formar parte de un
-      equipo del que pueda nutrirme,
-      aprender y seguir potenciando mis
-      conocimientos.</div>
+    <div class="text">Profesional en continua formación y con experiencia en el desarrollo de aplicaciones web full-stack.
+      Soy una persona resolutiva, acostumbrada a trabajar por proyectos y orientada a resultados.
+      Mis motivaciones profesionales son aportar valor a los proyectos a través del trabajo en equipo, así como continuar
+      desarrollándome profesionalmente.
+    </div>
   </section>
 </template>
 
@@ -34,9 +27,9 @@ section {
   padding: 1em;
 }
 
-.container.img{
-max-width: 6em;
-max-height: 8em;
+.container.img {
+  max-width: 6em;
+  max-height: 8em;
 }
 
 @media (min-width: 720px) {
@@ -49,10 +42,11 @@ max-height: 8em;
     max-width: 55em;
     margin: 2em;
   }
-  .container-img{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+
+  .container-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 </style>
