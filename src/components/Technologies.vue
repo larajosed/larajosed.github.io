@@ -43,7 +43,6 @@
             </div>
         </div>
     </section>
-
 </template>
 
 
@@ -60,7 +59,7 @@ h3 {
     justify-content: center;
     display: -ms-flex;
     display: -webkit-flex;
-    
+
 }
 
 .container-column {
@@ -84,27 +83,22 @@ h3 {
 }
 
 .icon {
-    max-height: 3em;
-    max-width: 4em;
+    width: 4em;
+    margin-right: 1em;
     margin: 1em;
-    height: auto;
-    width: auto;
     display: inline-block;
-    object-fit: contain;
 }
 
 
 
 @media (min-width: 720px) {
-   /*  .icon-container {
+    .icon-container {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-bottom: 1em;
-
-    } */
-
+    }
     .icon {
         max-height: 4em;
         max-width: 5em;
