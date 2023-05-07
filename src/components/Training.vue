@@ -64,13 +64,9 @@ section {
 }
 
 .icon {
-   max-height: 3em;
-   max-width: 4em;
-   margin: 1em;
-   height: auto;
-   width: auto;
+   width: 4em;
+    margin-right: 1em;
    display: inline-block;
-   object-fit: contain;
 }
 
 .text {
