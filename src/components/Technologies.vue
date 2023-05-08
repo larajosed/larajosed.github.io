@@ -1,8 +1,5 @@
 <template>
     <section>
-        <div>
-            <h3>Tecnologias</h3>
-        </div>
         <div class="container-technologies">
             <div class="container-column">
                 <h1>Frontend</h1>
@@ -47,11 +44,6 @@
 
 
 <style scoped>
-h3 {
-    text-align: center;
-    align-items: center;
-}
-
 .container-technologies {
     display: flex;
     flex-wrap: wrap;

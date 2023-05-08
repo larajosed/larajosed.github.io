@@ -19,31 +19,6 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="text">
-            <div class="logo-container">
-                <img class="icon" src="../assets/images/amStore.jpg" alt="AMSTORE">
-            </div>
-            <div class="text-container">
-                <b>Desarrollador Full Stack - AM Store</b>
-                <p> AM Store es una tienda online para la venta de ropa y complementos.
-                    Para la parte pública de la tienda, se desarrolla una aplicación front end con Angular 12 y Angular
-                    Material.
-                </p>
-                <p>Para la parte de back office (gestión de los pedidos, stock, gestión de catálogo) se cuenta con otra
-                    aplicación de front end desarrollada igualmente con Angular 12 y Angular Material.
-                    </p>
-                    <p>Ambas aplicaciones front trabajan contra un back end con una API Rest desarrollada con Spring Boot sobre
-                    el framework Shopizr con una serie de servicios que permiten operaciones tales como la creación de
-                    nuevos pedidos, registro de usuarios, gestión de catálogo, etc. sobre una BBDD MySQL.</p>
-                <div>
-                    <i>Feb. 2022 - Jun. 2022</i>
-                    <br>
-                    <i>Madrid, España.</i>
-                </div>
-            </div>
-        </div>
-    </section>
 </template>
 
 <style scoped>
