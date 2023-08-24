@@ -1,4 +1,22 @@
 <template>
+        <section>
+        <div class="text">
+            <div class="logo-container">
+                <img class="icon" src="../assets/images/aspasia.png" alt="ASPASIA">
+            </div>
+            <div class="text-container">
+                <b>Desarrollador Full Stack Jr - Grupo Aspasia.</b>
+                <p> Desarrollador full stack en varios proyectos de la compañía, en el sector de formación para empresas, organizaciones e instituciones.
+                    Haciendo mantenimiento en herramientas existentes y evolutivos con nuevas funcionalidades en aplicaciones. Las tecnologias utilizadas son para el frond end JQuery y para back end PHP.
+                </p>
+                <div>
+                    <i>Jun. 2023 - Actualmente</i>
+                    <br>
+                    <i>Madrid, España.</i>
+                </div>
+            </div>
+        </div>
+    </section>
     <section>
         <div class="text">
             <div class="logo-container">
