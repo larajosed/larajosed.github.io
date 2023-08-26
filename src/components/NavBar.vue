@@ -77,7 +77,7 @@ export default {
                 <li class="nav-item">
                     <a class="text" href="#/projects">PROYECTOS</a>
                 </li>
-                <li class="nav-item">
+                 <li class="nav-item" >
                     <a class="text" href="#/technologies">TECNOLOGÍAS</a>
                 </li>
                 
@@ -158,6 +158,7 @@ li:hover a {
     text-align: end;
     margin-right: 0.5em;
     border: 0;
+    cursor: pointer;
 }
 
 .item-bar{

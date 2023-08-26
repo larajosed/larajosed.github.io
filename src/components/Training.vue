@@ -32,7 +32,7 @@
                que conlleva el desarrollo de una aplicación web gracias a uno de los stack más potentes actualmente, el
                stack MEAN, compuesto por las siguientes tecnologías: MongoDB, Express, Angular y NodeJS.</p>
             <div>
-               <i>Sep 2021 - Ene. 2021 - 450 horas.</i>
+               <i>Sep 2021 - Ene. 2022 - 450 horas.</i>
                <br>
                <i>Madrid, España.</i>
             </div>

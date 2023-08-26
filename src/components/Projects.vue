@@ -21,7 +21,7 @@
     <section>
         <div class="text">
             <div class="logo-container">
-                <img class="icon" src="../assets/images/aplicacion.jpg" alt="AMSTORE">
+                <img class="icon" src="../assets/images/aplicacion.jpg" alt="MYGYMAPP">
             </div>
             <div class="text-container">
                 <b>MyGym App</b>
