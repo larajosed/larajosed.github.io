@@ -7,7 +7,7 @@
             <div class="text-container">
                 <b>Desarrollador Full Stack Jr - Grupo Aspasia.</b>
                 <p> Desarrollador full stack en varios proyectos de la compañía, en el sector de formación para empresas, organizaciones e instituciones.
-                    Haciendo mantenimiento en herramientas existentes y evolutivos con nuevas funcionalidades en aplicaciones. Las tecnologias utilizadas son para el frond end JQuery y para back end PHP.
+                    Resolución de incidencias, haciendo mantenimiento en herramientas existentes y evolutivos con nuevas funcionalidades en aplicaciones. Las tecnologias utilizadas son para el Frontend JQuery y para Backend PHP.
                 </p>
                 <div>
                     <i>Jun. 2023 - Actualmente</i>
@@ -25,7 +25,7 @@
             <div class="text-container">
                 <b>Desarrollador Full Stack Jr - Elecnor Deimos.</b>
                 <p> Desarrollador full stack en varios proyectos de la compañía, en el sector de transporte público.
-                    Desarrollo de aplicaciones en front end con Angular y
+                    Desarrollo de aplicaciones en Frontend con Angular y
                     Angular Material. En estas aplicaciones, utilicé también la librería D3.js para la confección de
                     gráficas y esquemas de conexión.
                 </p>

@@ -10,8 +10,8 @@
                 <p> Para la parte pública de la tienda, se desarrolla una aplicación front end con Angular 12 y Angular
                     Material.</p>
                 <p>Para la parte de back office (gestión de los pedidos, stock, gestión de catálogo) se cuenta con otra
-                    aplicación de front end desarrollada igualmente con Angular 12 y Angular Material.</p>
-                <p>Ambas aplicaciones front trabajan contra un back end con una API Rest desarrollada con Spring Boot sobre
+                    aplicación de Frontend desarrollada igualmente con Angular 12 y Angular Material.</p>
+                <p>Ambas aplicaciones front trabajan contra un Backend con una API Rest desarrollada con Spring Boot sobre
                     el framework Shopizr con una serie de servicios que permiten operaciones tales como la creación de
                     nuevos pedidos, registro de usuarios, gestión de catálogo, etc. sobre una BBDD MySQL.</p>
                 </p>

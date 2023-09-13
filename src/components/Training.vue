@@ -8,7 +8,7 @@
             <b>Ilerna FP: Técnico Superior en Desarrollo de Aplicaciones Web.</b>
             <p>Actualmente desarrollando, implantando, y manteniendo aplicaciones web,
                con independencia del modelo empleado y utilizando tecnologías específicas. Para el
-               backend utiizando ExpressJs y NodeJs y en base de datos MySQL. Garantizando el acceso a los datos de
+               Backend utiizando ExpressJs y NodeJs y en base de datos MySQL. Garantizando el acceso a los datos de
                forma
                segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares
                establecidos.

@@ -7,8 +7,7 @@
       <p> Profesional en continua formación y con experiencia en el desarrollo de aplicaciones web full-stack.</p>
       <p>Soy una persona resolutiva, acostumbrada a trabajar por proyectos y orientada a resultados.</p>
       <p>Mis motivaciones profesionales son aportar valor a los proyectos a través del trabajo en equipo, así como
-        continuar
-        desarrollándome profesionalmente.</p>
+        continuar desarrollándome profesionalmente.</p>
     </div>
   </section>
 </template>
