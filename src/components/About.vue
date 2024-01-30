@@ -19,7 +19,6 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 0em 1em 1em 1em;
   margin-top: 1em;
 }
 
@@ -51,9 +50,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 2em;
-
   }
-
-  
 }
 </style>
