@@ -53,7 +53,7 @@ export default {
                 <a href="tel:+34693537526"><phone-icon /></a>
             </div>
             <div class="items">
-                <a href="https://api.whatsapp.com/send/?phone=34693537526">
+                <a href="https://api.whatsapp.com/send/?phone=34693537526" target="_blank">
                     <WhatsappIcon />
                 </a>
             </div>

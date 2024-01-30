@@ -56,6 +56,9 @@
                     <Popper hover content="MongoDB">
                         <img class="icon" src="../assets/images/bbdd/MongoDB.png" alt="MONGODB">
                     </Popper>
+                    <Popper hover content="Oracle">
+                        <img class="icon" src="../assets/images/bbdd/oracle.png" alt="ORACLE">
+                    </Popper>
                     
                 </div>
             </div>
