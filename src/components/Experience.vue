@@ -10,7 +10,7 @@
                     Resolución de incidencias, haciendo mantenimiento en herramientas existentes y evolutivos con nuevas funcionalidades en aplicaciones. Las tecnologias utilizadas son para el Frontend JQuery y para Backend PHP.
                 </p>
                 <div>
-                    <i>Jun. 2023 - Actualmente como fijo discontinuo.</i>
+                    <i>Jun. 2023 - Dic. 2023 como fijo discontinuo.</i>
                     <br>
                     <i>Madrid, España.</i>
                 </div>
@@ -30,7 +30,7 @@
                     gráficas y esquemas de conexión.
                 </p>
                 <div>
-                    <i>Jun. 2022 - Ene. 2023</i>
+                    <i>Jun. 2022 - Nov. 2022</i>
                     <br>
                     <i>Madrid, España.</i>
                 </div>
