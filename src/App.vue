@@ -27,13 +27,13 @@ export default {
 header {
   height: 7em;
   position: relative;
-  text-align: center;
+  /*   text-align: center;
   font-family: Arial;
   font-weight: bold;
   font-size: 30px;
   color: #5b5b5b;
   justify-content: center;
-  display: flex;
+  display: flex; */
 }
 
 header h1 {
@@ -55,7 +55,7 @@ header h3 {
 
 @media (min-width: 720px) {
   header {
-    height: 8em;
+    height: 11em;
   }
 
   header h1 {
