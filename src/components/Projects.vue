@@ -5,7 +5,7 @@
       <section>
         <div class="text">
             <div class="logo-container">
-                <img class="icon" src="../assets/images/NutritionDigitalAssistant.png" alt="NUTRITION DIGITAL ASSISTANT">
+                <img class="icon" src="../assets/images/logonew.png" alt="NUTRITION DIGITAL ASSISTANT">
             </div>
             <div class="text-container">
                 <b>Nutrition's Digital Assistant</b>
