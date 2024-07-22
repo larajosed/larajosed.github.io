@@ -15,9 +15,9 @@
                    
                 <p>Para el <b>Front end</b>, se desarrolla la aplicación con <b>Angular 17, JavaScript, CSS y Bootstrap.</b> 
                 <p>El <b>Back end</b> se desarrolla con <b>Spring Boot</b> que es Framework para el desarrollo de aplicaciones y páginas webs con <b>Java</b> como lenguaje de programación y <b>Liquidbase</b> que es una librería Open Source, que nos permitirá realizar el seguimiento, gestión y aplicación de cambios en el modelo de datos.
-                    Se realiza mediante la creación de script sql incrementales. Con lo que comenzamos con script de creación de tablas, script de inserción de datos y, a medida que avanza el desarrollo, se van creando scripts con las modificaciones oportunas que exige la tarea que está llevando a cabo. La carga de datos se hace mediante scrips ejecutados por el servidor de back-end.</p> 
+                    Se realiza mediante la creación de scripts sql incrementales. Con lo que comenzamos con scripts de creación de tablas, de inserción de datos y, a medida que avanza el desarrollo, se van creando scripts con las modificaciones oportunas que exige la tarea que está llevando a cabo. Liquidbase en la aplicación de backend se encarga de la ejecución de scripts, analizando los que se han ejecutados y los que no se han ejecutados para asegurar que el modelo de datos esta correcto.</p> 
                 </p>
-                <p>Para la <b>base de datos</b> utilice <b>MySQL</b> que es un sistema de base de datos relacionales</p>
+                <p>Para la <b>base de datos</b> utilice <b>MySQL</b> que es un sistema de base de datos relacionales.</p>
             </div>
         </div>
     </section>
