@@ -52,6 +52,7 @@
 <style scoped>
 section {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 section:hover {

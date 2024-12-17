@@ -179,10 +179,11 @@ export default defineComponent({
 .container-technologies {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: center;
   display: -ms-flex;
   display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-column {
@@ -195,7 +196,6 @@ export default defineComponent({
   align-items: center;
   text-align: center;
   margin: 0;
-  margin-top: 25px;
 }
 
 .icon-container {
@@ -245,6 +245,20 @@ export default defineComponent({
   .icon {
     max-height: 4em;
     max-width: 5em;
+  }
+
+  .container-column {
+    flex-direction: column;
+  }
+
+  @media (max-width: 400px) {
+    .container-technologies {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 }
 </style>
