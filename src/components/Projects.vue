@@ -1,6 +1,5 @@
 <script>
 import Structure from "./Structure.vue";
-
 export default {
   data() {
     return {
