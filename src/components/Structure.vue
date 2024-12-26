@@ -75,7 +75,6 @@ export default {
 .text-container {
   font-weight: normal;
   font-family: sans-serif;
-  /*  width: 950px; */
 }
 
 .sign {
@@ -99,10 +98,6 @@ section {
   width: 100%;
   margin-bottom: 30px;
 }
-
-/* section p {
-  width: 950px;
-} */
 
 section:hover {
   box-shadow: 0px 1px 8px -3px #333434;

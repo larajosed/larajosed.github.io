@@ -10,33 +10,33 @@
           <Popper hover content="JQuery">
             <img
               class="icon"
-              src="../assets/images/frontend/jquery.png"
+              src="@/assets/images/frontend/jquery.png"
               alt="JQUERY"
             />
           </Popper>
           <Popper hover content="Angular">
             <img
               class="icon"
-              src="../assets/images/frontend/angular.png"
+              src="@/assets/images/frontend/angular.png"
               alt="ANGULAR"
             />
           </Popper>
           <Popper hover content="Bootstrap">
             <img
               class="icon"
-              src="../assets/images/frontend/bootstrap.png"
+              src="@/assets/images/frontend/bootstrap.png"
               alt="BOOTSTRAP"
             />
           </Popper>
           <Popper hover content="Vue">
             <img
               class="icon"
-              src="../assets/images/frontend/vue.png"
+              src="@/assets/images/frontend/vue.png"
               alt="VUE"
             />
           </Popper>
           <Popper hover content="D3">
-            <img class="icon" src="../assets/images/frontend/d3.png" alt="D3" />
+            <img class="icon" src="@/assets/images/frontend/d3.png" alt="D3" />
           </Popper>
         </div>
       </div>
@@ -46,7 +46,7 @@
           <Popper hover content="Express js">
             <img
               class="icon"
-              src="../assets/images/backend/ExpressJS.png"
+              src="@/assets/images/backend/ExpressJS.png"
               alt="EXPRESSJS"
             />
           </Popper>
@@ -54,7 +54,7 @@
           <Popper hover content="Node js">
             <img
               class="icon"
-              src="../assets/images/backend/nodejs.png"
+              src="@/assets/images/backend/nodejs.png"
               alt="NODEJS"
             />
           </Popper>
@@ -62,21 +62,17 @@
           <Popper hover content="Spring">
             <img
               class="icon"
-              src="../assets/images/backend/spring.png"
+              src="@/assets/images/backend/spring.png"
               alt="SPRING"
             />
           </Popper>
 
           <Popper hover content="C#">
-            <img class="icon" src="../assets/images/backend/c.png" alt="C#" />
+            <img class="icon" src="@/assets/images/backend/c.png" alt="C#" />
           </Popper>
 
           <Popper hover content="Php">
-            <img
-              class="icon"
-              src="../assets/images/backend/php.png"
-              alt="PHP"
-            />
+            <img class="icon" src="@/assets/images/backend/php.png" alt="PHP" />
           </Popper>
         </div>
       </div>
@@ -86,7 +82,7 @@
           <Popper hover content="MySQL">
             <img
               class="icon"
-              src="../assets/images/bbdd/mysql.png"
+              src="@/assets/images/bbdd/mysql.png"
               alt="MYSQL"
             />
           </Popper>
@@ -94,14 +90,14 @@
           <Popper hover content="MongoDB">
             <img
               class="icon"
-              src="../assets/images/bbdd/MongoDB.png"
+              src="@/assets/images/bbdd/MongoDB.png"
               alt="MONGODB"
             />
           </Popper>
           <Popper hover content="Oracle">
             <img
               class="icon"
-              src="../assets/images/bbdd/oracle.png"
+              src="@/assets/images/bbdd/oracle.png"
               alt="ORACLE"
             />
           </Popper>
@@ -113,7 +109,7 @@
           <Popper hover content="Bamboo">
             <img
               class="icon"
-              src="../assets/images/otros/bamboo.png"
+              src="@/assets/images/otros/bamboo.png"
               alt="BAMBOO"
             />
           </Popper>
@@ -121,23 +117,19 @@
           <Popper hover content="Bitbucket">
             <img
               class="icon"
-              src="../assets/images/otros/Bitbucket.png"
+              src="@/assets/images/otros/Bitbucket.png"
               alt="BITBUCKET"
             />
           </Popper>
 
           <Popper hover content="Jira">
-            <img
-              class="icon"
-              src="../assets/images/otros/JIRA.png"
-              alt="JIRA"
-            />
+            <img class="icon" src="@/assets/images/otros/JIRA.png" alt="JIRA" />
           </Popper>
 
           <Popper hover content="Nexus">
             <img
               class="icon"
-              src="../assets/images/otros/nexus.png"
+              src="@/assets/images/otros/nexus.png"
               alt="NEXUS"
             />
           </Popper>
@@ -145,7 +137,7 @@
           <Popper hover content="Sourcetree">
             <img
               class="icon"
-              src="../assets/images/otros/sourcetree.png"
+              src="@/assets/images/otros/sourcetree.png"
               alt="SOURCETREE"
             />
           </Popper>

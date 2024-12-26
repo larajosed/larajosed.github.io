@@ -5,7 +5,7 @@
   <Section>
     <div class="text">
       <div class="logo-container">
-        <img class="icon" src="../assets/images/ilerna.png" alt="ILERNA" />
+        <img class="icon" src="@/assets/images/ilerna.png" alt="ILERNA" />
       </div>
       <div class="text-container">
         <b>Ilerna FP: Técnico Superior en Desarrollo de Aplicaciones Web.</b>
@@ -30,7 +30,7 @@
       <div class="logo-container">
         <img
           class="icon"
-          src="../assets/images/idBootcamps.png"
+          src="@/assets/images/idBootcamps.png"
           alt="IDBOOTCAMPS"
         />
       </div>
@@ -54,7 +54,7 @@
   <section>
     <div class="text">
       <div class="logo-container">
-        <img class="icon" src="../assets/images/UPEL.jpg" alt="IDBOOTCAMPS" />
+        <img class="icon" src="@/assets/images/UPEL.jpg" alt="IDBOOTCAMPS" />
       </div>
       <div class="text-container">
         <b

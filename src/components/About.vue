@@ -4,7 +4,7 @@
   </div>
   <section>
     <div class="container-img">
-      <img src="../assets/images/foto.jpg" alt="FOTO" />
+      <img src="@/assets/images/foto.jpg" alt="FOTO" />
     </div>
     <div class="text">
       <p>
