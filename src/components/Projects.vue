@@ -5,7 +5,7 @@ export default {
     return {
       arrProjects: [
         {
-          logo: "/src/assets/images/nutrition.png",
+          logo: "../assets/images/nutrition.png",
           title: "Nutrition's Digital Assistant",
           mainParagraph:
             " Nutrition's Digital Assistant es una aplicación para crear dietas personalizadas, en la que se puede acceder como usuario para ver o solicitar dietas y como administrador para ver dietas solicitadas y crearlas.",
@@ -17,18 +17,18 @@ export default {
             " Para la <b>base de datos</b> utilicé <b>MySQL</b> que es un sistema de base de datos relacionales.",
           ],
           images: [
-            "src/assets/images/nutrition/Captura1.PNG",
-            "src/assets/images/nutrition/LOGIN.PNG",
-            "src/assets/images/nutrition/Captura6.PNG",
-            "src/assets/images/nutrition/Captura8.PNG",
-            "src/assets/images/nutrition/DIET.PNG",
-            "src/assets/images/nutrition/Captura2.PNG",
-            "src/assets/images/nutrition/Captura4.PNG",
-            "src/assets/images/nutrition/Captura5.PNG",
-            "src/assets/images/nutrition/Receta.PNG",
-            "src/assets/images/nutrition/Dietas.PNG",
-            "src/assets/images/nutrition/Editar dieta.PNG",
-            "src/assets/images/nutrition/Registro.PNG",
+            "../assets/images/nutrition/Captura1.PNG",
+            "../assets/images/nutrition/LOGIN.PNG",
+            "../assets/images/nutrition/Captura6.PNG",
+            "../assets/images/nutrition/Captura8.PNG",
+            "../assets/images/nutrition/DIET.PNG",
+            "../assets/images/nutrition/Captura2.PNG",
+            "../assets/images/nutrition/Captura4.PNG",
+            "../assets/images/nutrition/Captura5.PNG",
+            "../assets/images/nutrition/Receta.PNG",
+            "../assets/images/nutrition/Dietas.PNG",
+            "../assets/images/nutrition/Editar dieta.PNG",
+            "../assets/images/nutrition/Registro.PNG",
           ],
         },
         {
