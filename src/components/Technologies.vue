@@ -51,14 +51,6 @@
             />
           </Popper>
 
-          <Popper hover content="Node js">
-            <img
-              class="icon"
-              src="@/assets/images/backend/nodejs.png"
-              alt="NODEJS"
-            />
-          </Popper>
-
           <Popper hover content="Spring">
             <img
               class="icon"
@@ -67,8 +59,12 @@
             />
           </Popper>
 
-          <Popper hover content="C#">
-            <img class="icon" src="@/assets/images/backend/c.png" alt="C#" />
+          <Popper hover content="Java">
+            <img
+              class="icon"
+              src="@/assets/images/backend/java.png"
+              alt="Java"
+            />
           </Popper>
 
           <Popper hover content="Php">
@@ -124,14 +120,6 @@
 
           <Popper hover content="Jira">
             <img class="icon" src="@/assets/images/otros/JIRA.png" alt="JIRA" />
-          </Popper>
-
-          <Popper hover content="Nexus">
-            <img
-              class="icon"
-              src="@/assets/images/otros/nexus.png"
-              alt="NEXUS"
-            />
           </Popper>
 
           <Popper hover content="Sourcetree">
