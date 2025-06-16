@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <div class="titulo"><h1>FORMACIÓN</h1></div>
+    <div class="titulo">
+      <h1>FORMACIÓN</h1>
+    </div>
   </div>
   <Section>
     <div class="text">
@@ -10,15 +12,17 @@
       <div class="text-container">
         <b>Ilerna FP: Técnico Superior en Desarrollo de Aplicaciones Web.</b>
         <p>
-          Actualmente desarrollando, implantando, y manteniendo aplicaciones
-          web, con independencia del modelo empleado y utilizando tecnologías
-          específicas. Para el Backend utiizando ExpressJs y NodeJs y en base de
-          datos MySQL. Garantizando el acceso a los datos de forma segura y
-          cumpliendo los criterios de accesibilidad, usabilidad y calidad
-          exigidas en los estándares establecidos.
+          Durante mis estudios en Ilerna FP, me especialicé en el desarrollo,
+          implantación y mantenimiento de aplicaciones web robustas y
+          eficientes. Adquirí conocimientos sólidos en la creación de APIs REST
+          utilizando Node.js y tambien Spring Boot para el backend, gestionando
+          bases de datos SQL de manera eficaz. También aprendí a diseñar
+          interfaces de usuario intuitivas y responsivas con HTML, CSS y
+          JavaScript, garantizando el acceso seguro a los datos y el
+          cumplimiento de los estándares de accesibilidad, usabilidad y calidad.
         </p>
         <div>
-          <i>Sep. 2022 - Actualmente.</i>
+          <i>Feb. 2023 - May. 2025.</i>
           <br />
           <i>Madrid, España.</i>
         </div>
@@ -37,38 +41,16 @@
       <div class="text-container">
         <b>ID Bootcamp: Programación y desarrollo web Full Stack.</b>
         <p>
-          Basádo en el lenguaje JavaScript, aprendi a desenvolverme en
-          cualquiera de las etapas que conlleva el desarrollo de una aplicación
-          web gracias a uno de los stack más potentes actualmente, el stack
-          MEAN, compuesto por las siguientes tecnologías: MongoDB, Express,
-          Angular y NodeJS.
+          Adquirí habilidades integrales en el desarrollo de aplicaciones web
+          full-stack, centrándome en el ecosistema JavaScript. Me especialicé en
+          el potente stack MEAN (MongoDB, Express, Angular, Node.js), lo que me
+          permite desenvolverme con soltura en cada etapa del ciclo de vida de
+          una aplicación web.
         </p>
         <div>
-          <i>Sep 2021 - Ene. 2022 - 450 horas.</i>
+          <i>450 horas.</i>
           <br />
           <i>Madrid, España.</i>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="text">
-      <div class="logo-container">
-        <img class="icon" src="@/assets/images/UPEL.jpg" alt="IDBOOTCAMPS" />
-      </div>
-      <div class="text-container">
-        <b
-          >Universidad Pedagogica Experimental Libertador: Profesor de Educación
-          Fisíca.</b
-        >
-        <p>
-          Entre las tareas destacan programar, organizar y coordinar actividades
-          deportivas; supervisar grupos; entrenar al alumnado en diferentes
-          disciplinas deportivas y motivarlo para que mejore su rendimiento
-          físico en centros educativos, institutos o universidades.
-        </p>
-        <div>
-          <i>Maturin, Venezuela.</i>
         </div>
       </div>
     </div>
@@ -83,8 +65,6 @@ section {
 
 section:hover {
   box-shadow: 0px 1px 8px -3px #333434;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
 }
 
 .icon {
@@ -120,12 +100,12 @@ section:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    transition: 0.8s ease;
   }
 
   section:hover {
-    box-shadow: 0px 1px 8px -1px #97a7b3;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+    box-shadow: 0px 4px 16px -1px #97a7b3;
+    transform: 0.5s;
   }
 
   .text {

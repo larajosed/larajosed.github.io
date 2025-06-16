@@ -27,13 +27,6 @@ export default {
 header {
   height: 7em;
   position: relative;
-  /*   text-align: center;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 30px;
-  color: #5b5b5b;
-  justify-content: center;
-  display: flex; */
 }
 
 header h1 {

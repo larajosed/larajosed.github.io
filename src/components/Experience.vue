@@ -1,7 +1,39 @@
 <template>
   <div class="container">
-    <div class="titulo"><h1>EXPERIENCIA PROFESIONAL</h1></div>
+    <div class="titulo">
+      <h1>EXPERIENCIA PROFESIONAL</h1>
+    </div>
   </div>
+  <section>
+    <div class="text">
+      <div class="logo-container">
+        <img
+          class="icon"
+          src="../assets/images/sngular-logo-vector.png"
+          alt="SNGULAR"
+        />
+      </div>
+      <div class="text-container">
+        <b>Desarrollador Full Stack Trainee - Sngular.</b>
+        <p>
+          Como desarrollador full stack, contribuí al desarrollo integral de una
+          aplicación, donde realicé mejoras y evolutivos en funcionalidades
+          existentes, además de construir nuevos componentes desde cero. En el
+          frontend, utilicé Angular, Angular Material, Bootstrap y Jest. Para el
+          backend, trabajé con Spring Boot, JUnit y Mockito. Apliqué Test-Driven
+          Development (TDD) en mis tareas, gestioné el control de versiones con
+          Git y utilicé Trello para la gestión de tareas, siguiendo metodologías
+          ágiles como Scrum.
+        </p>
+        <div>
+          <i>Mar. 2025 - Jun. 2025.</i>
+          <br />
+          <i>Madrid, España.</i>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="text">
       <div class="logo-container">
@@ -10,11 +42,12 @@
       <div class="text-container">
         <b>Desarrollador Full Stack Jr - Grupo Aspasia.</b>
         <p>
-          Desarrollador full stack en varios proyectos de la compañía, en el
-          sector de formación para empresas, organizaciones e instituciones.
-          Resolución de incidencias, haciendo mantenimiento en herramientas
-          existentes y evolutivos con nuevas funcionalidades en aplicaciones.
-          Las tecnologias utilizadas son para el Frontend JQuery y para Backend
+          Como desarrollador full stack, participé en varios proyectos dentro
+          del sector de la formación para empresas, organizaciones e
+          instituciones. Mis responsabilidades incluyeron el mantenimiento y
+          desarrollo de nuevas funcionalidades en una herramienta de gestión de
+          formación para empresas y la implementación de mejoras en diversas
+          aplicaciones. Para el frontend, utilicé jQuery, y para el backend,
           PHP.
         </p>
         <div>
@@ -33,11 +66,13 @@
       <div class="text-container">
         <b>Desarrollador Full Stack Jr - Elecnor Deimos.</b>
         <p>
-          Desarrollador full stack en varios proyectos de la compañía, en el
-          sector de transporte público. Desarrollo de aplicaciones en Frontend
-          con Angular y Angular Material. En estas aplicaciones, utilicé también
-          la librería D3.js para la confección de gráficas y esquemas de
-          conexión.
+          En mi experiencia como desarrollador full stack, participé en varios
+          proyectos, enfocándome principalmente en el desarrollo de aplicaciones
+          para el frontend. Utilicé Angular y Angular Material, y fui
+          responsable tanto de la resolución de incidencias como de la creación
+          de nuevas funcionalidades. Para la visualización de datos complejos,
+          como gráficas y esquemas de conexión, integré la potente librería
+          D3.js en las aplicaciones.
         </p>
         <div>
           <i>Jun. 2022 - Nov. 2022</i>
@@ -57,8 +92,7 @@ section {
 
 section:hover {
   box-shadow: 0px 1px 8px -3px #333434;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
+  transition: 1s;
 }
 
 .icon {
@@ -96,12 +130,12 @@ section:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    transition: 0.8s ease;
   }
 
   section:hover {
-    box-shadow: 0px 1px 8px -1px #97a7b3;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+    box-shadow: 0px 4px 16px -1px #97a7b3;
+    transform: 0.5s;
   }
 
   .text {

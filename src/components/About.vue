@@ -1,36 +1,34 @@
 <template>
   <div class="container">
-    <div class="titulo"><h1>SOBRE MI</h1></div>
+    <div class="titulo">
+      <h1>SOBRE MI</h1>
+    </div>
   </div>
   <section>
-    <div class="container-img">
+    <!-- <div class="container-img">
       <img src="@/assets/images/foto.jpg" alt="FOTO" />
-    </div>
+    </div>-->
     <div class="text">
       <p>
-        Profesional en continua formación y con experiencia en el desarrollo de
-        aplicaciones web full-stack.
+        Soy un profesional con formación continua y experiencia en el desarrollo
+        de aplicaciones web full-stack. Me caracterizo por ser una persona
+        resolutiva, orientada a resultados y con una gran pasión por el
+        aprendizaje y el crecimiento profesional. Estoy acostumbrado a trabajar
+        por proyectos, lo que me ha permitido desarrollar una mentalidad
+        práctica y eficiente.
       </p>
       <p>
-        Soy una persona resolutiva, con muchas ganas de aprender y crecer a
-        nivel profesional. Acostumbrado a trabajar por proyectos y orientada a
-        resultados.
+        He finalizado mis estudios de Técnico Superior en Desarrollo de
+        Aplicaciones Web, consolidando mis conocimientos y preparándome para
+        nuevos desafíos.
       </p>
       <p>
-        Actualmente me encuentro terminando mis estudios de un grado superior en
-        desarrollo de aplicaciones web.
-      </p>
-      <p>
-        Me encantaría tener la oportunidad de iniciarme como desarrollador
-        junior y ser parte de un equipo del que pueda nutrirme, aprender y
-        seguir potenciando mis conocimientos. Crecer en él, tanto personal como
-        profesionalmente y aportar todas mis ganas. Asumir cada reto que se
-        ponga por delante, juntos alcanzar todos y cada uno de los objetivos.
-      </p>
-      <p>
-        Mis motivaciones profesionales son aportar valor a los proyectos a
-        través del trabajo en equipo, así como continuar desarrollándome
-        profesionalmente como desarrollador web full-stack.
+        Mi objetivo es iniciar mi carrera como desarrollador web junior en un
+        entorno dinámico, donde pueda integrarme en un equipo, aportar valor,
+        aprender y seguir potenciando mis habilidades. Estoy comprometido con el
+        crecimiento continuo, tanto a nivel personal como profesional, y listo
+        para asumir cada reto con entusiasmo, colaborando para alcanzar los
+        objetivos del equipo.
       </p>
     </div>
   </section>
@@ -43,12 +41,12 @@ section {
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 15px;
+  transition: 0.8s ease;
 }
 
 section:hover {
-  box-shadow: 0px 1px 8px -3px #333434;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
+  box-shadow: 0px 4px 16px -1px #97a7b3;
+  transform: 0.5s;
 }
 
 .text {

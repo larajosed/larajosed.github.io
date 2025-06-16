@@ -1,17 +1,19 @@
 <template>
   <div class="container">
-    <div class="titulo"><h1>TECNOLOGÍAS</h1></div>
+    <div class="titulo">
+      <h1>TECNOLOGÍAS</h1>
+    </div>
   </div>
   <section>
     <div class="container-technologies">
       <div class="container-column">
         <h1>FRONTEND</h1>
         <div class="icon-container">
-          <Popper hover content="JQuery">
+          <Popper hover content="JavasCript">
             <img
               class="icon"
-              src="@/assets/images/frontend/jquery.png"
-              alt="JQUERY"
+              src="@/assets/images/frontend/JavasCript-logo.png"
+              alt="JAVASCRIPT"
             />
           </Popper>
           <Popper hover content="Angular">
@@ -28,11 +30,11 @@
               alt="BOOTSTRAP"
             />
           </Popper>
-          <Popper hover content="Vue">
+          <Popper hover content="Jest">
             <img
               class="icon"
-              src="@/assets/images/frontend/vue.png"
-              alt="VUE"
+              src="@/assets/images/frontend/jest.png"
+              alt="JEST"
             />
           </Popper>
           <Popper hover content="D3">
@@ -43,22 +45,6 @@
       <div class="container-column">
         <h1>BACKEND</h1>
         <div class="icon-container">
-          <Popper hover content="Express js">
-            <img
-              class="icon"
-              src="@/assets/images/backend/ExpressJS.png"
-              alt="EXPRESSJS"
-            />
-          </Popper>
-
-          <Popper hover content="Spring">
-            <img
-              class="icon"
-              src="@/assets/images/backend/spring.png"
-              alt="SPRING"
-            />
-          </Popper>
-
           <Popper hover content="Java">
             <img
               class="icon"
@@ -66,9 +52,26 @@
               alt="Java"
             />
           </Popper>
-
-          <Popper hover content="Php">
-            <img class="icon" src="@/assets/images/backend/php.png" alt="PHP" />
+          <Popper hover content="Spring">
+            <img
+              class="icon"
+              src="@/assets/images/backend/spring-logo.png"
+              alt="SPRING"
+            />
+          </Popper>
+          <Popper hover content="JUnit">
+            <img
+              class="icon"
+              src="@/assets/images/backend/junit.png"
+              alt="JUNIT"
+            />
+          </Popper>
+          <Popper hover content="Mockito">
+            <img
+              class="icon"
+              src="@/assets/images/backend/mockito.png"
+              alt="MOCKITO"
+            />
           </Popper>
         </div>
       </div>
@@ -90,38 +93,17 @@
               alt="MONGODB"
             />
           </Popper>
-          <Popper hover content="Oracle">
-            <img
-              class="icon"
-              src="@/assets/images/bbdd/oracle.png"
-              alt="ORACLE"
-            />
-          </Popper>
         </div>
       </div>
       <div class="container-column">
         <h1>OTROS</h1>
         <div class="icon-container">
-          <Popper hover content="Bamboo">
-            <img
-              class="icon"
-              src="@/assets/images/otros/bamboo.png"
-              alt="BAMBOO"
-            />
+          <Popper hover content="Git">
+            <img class="icon" src="@/assets/images/otros/Git.png" alt="Git" />
           </Popper>
-
-          <Popper hover content="Bitbucket">
-            <img
-              class="icon"
-              src="@/assets/images/otros/Bitbucket.png"
-              alt="BITBUCKET"
-            />
-          </Popper>
-
           <Popper hover content="Jira">
             <img class="icon" src="@/assets/images/otros/JIRA.png" alt="JIRA" />
           </Popper>
-
           <Popper hover content="Sourcetree">
             <img
               class="icon"
@@ -167,7 +149,7 @@ export default defineComponent({
 }
 
 .container-column {
-  width: 45%;
+  width: 25%;
   margin-bottom: 5px;
   margin: 5px 5px 5px 5px;
 }
@@ -185,16 +167,15 @@ export default defineComponent({
   justify-content: center;
   background-color: #f1f1f1;
   display: flex;
+  transition: 0.8s ease;
 }
 
 .icon-container:hover {
-  box-shadow: 0px 1px 8px -3px #333434;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
+  box-shadow: 0px 4px 16px -1px #97a7b3;
+  transform: 0.5s;
 }
 
 .icon {
-  width: 4em;
   margin-right: 1em;
   margin: 1em;
   display: inline-block;

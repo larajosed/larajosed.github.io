@@ -134,12 +134,12 @@ section:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    transition: 0.8s ease;
   }
 
   section:hover {
-    box-shadow: 0px 1px 8px -1px #97a7b3;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+    box-shadow: 0px 4px 16px -1px #97a7b3;
+    transform: 0.5s;
   }
 
   .text {

@@ -1,4 +1,4 @@
-@import './base.css';
+@import "./base.css";
 
 body {
   background: url("/src/assets/images/background.PNG");
@@ -14,5 +14,4 @@ body {
     background-size: 9em;
     margin: 0;
   }
-
 }

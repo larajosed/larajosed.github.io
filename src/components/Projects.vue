@@ -8,7 +8,7 @@ export default {
           logo: "images/nutrition.png",
           title: "Nutrition's Digital Assistant",
           mainParagraph:
-            " Nutrition's Digital Assistant es una aplicación para crear dietas personalizadas, en la que se puede acceder como usuario para ver o solicitar dietas y como administrador para ver dietas solicitadas y crearlas.",
+            "Nutrition's Digital Assistant es una aplicación diseñada para la creación y gestión de dietas personalizadas. Permite a los usuarios visualizar o solicitar dietas, mientras que los administradores pueden revisar las solicitudes recibidas y diseñar nuevos planes nutricionales..",
           secondaryParagraph: [
             "<b>Usuario:</b> puede solicitar tu dieta personalizada y podrás observarla en el apartado mis dietas. Iniciar y cerrar sesión, ver su dieta el día y las veces que quieras.",
             "<b>Administrador:</b> se encarga de ver las solicitudes de dietas pendientes, crear nuevas dietas, editar o eliminar dietas. Así como también crear o eliminar recetas.",
@@ -32,7 +32,7 @@ export default {
           logo: "images/aplicacion.jpg",
           title: "MyGym App",
           mainParagraph:
-            "Es una aplicación que permite consultar ejercicios y rutinas para entrenamiento de fitness con referencias multimedia.",
+            "Desarrollé una aplicación diseñada para consultar ejercicios y rutinas de entrenamiento de fitness. Incluye referencias multimedia que enriquecen la experiencia del usuario y facilitan la correcta ejecución de cada movimiento..",
           secondaryParagraph: [
             "La aplicación se compone de una aplicación de <b>Front end</b> desarrollada en <b>Angular 11</b> con maquetación responsive con <b>Bootstrap.</b>",
             "El <b>Back end</b> fue desarrollado con <b>NodeJS</b> haciendo uso de <b>Express</b> para exponer una API que permite consultar ejercicios y rutinas.",
@@ -59,7 +59,9 @@ export default {
 
 <template>
   <div class="container">
-    <div class="titulo"><h1>PROYECTOS</h1></div>
+    <div class="titulo">
+      <h1>PROYECTOS</h1>
+    </div>
   </div>
   <div class="project-box">
     <Structure :jsonData="project" v-for="project in arrProjects"></Structure>

@@ -65,23 +65,27 @@ export default {
     </div>
 
     <div class="container-fluid" v-show="show">
-      <ul class="navbar-nav">
-        <li class="nav-item" @click="showMenu()">
-          <a class="text" href="#">SOBRE MI</a>
-        </li>
-        <li class="nav-item" @click="showMenu()">
-          <a class="text" href="#/training">FORMACIÓN</a>
-        </li>
-        <li class="nav-item" @click="showMenu()">
-          <a class="text" href="#/experience">EXPERIENCIA PROFESIONAL</a>
-        </li>
-        <li class="nav-item" @click="showMenu()">
-          <a class="text" href="#/projects">PROYECTOS</a>
-        </li>
-        <li class="nav-item" @click="showMenu()">
-          <a class="text" href="#/technologies">TECNOLOGÍAS</a>
-        </li>
-      </ul>
+      <div class="navbar-nav">
+        <a class="text" href="#" @click="showMenu()">
+          <div class="nav-item">SOBRE MI</div></a
+        >
+
+        <a class="text" @click="showMenu()" href="#/training">
+          <div class="nav-item">FORMACIÓN</div></a
+        >
+
+        <a class="text" @click="showMenu()" href="#/experience"
+          ><div class="nav-item">EXPERIENCIA PROFESIONAL</div></a
+        >
+
+        <a class="text" @click="showMenu()" href="#/projects">
+          <div class="nav-item">PROYECTOS</div></a
+        >
+
+        <a class="text" @click="showMenu()" href="#/technologies">
+          <div class="nav-item">TECNOLOGÍAS</div></a
+        >
+      </div>
     </div>
   </nav>
 </template>
@@ -99,7 +103,7 @@ export default {
   padding: 0;
 }
 
-.navbar-nav > li {
+.navbar-nav > div {
   float: none;
   list-style: none;
   text-decoration: none;
@@ -114,14 +118,16 @@ a:link {
   text-decoration: none;
 }
 
-li {
+.nav-item {
   transition: 0.7s;
+  padding: 8px;
 }
-li:hover {
+.nav-item:hover {
   background-color: rgb(249, 249, 249);
+  color: rgb(126, 128, 130);
 }
 
-li:hover a {
+.nav-item:hover a {
   color: rgb(126, 128, 130);
   text-shadow: 0px 4px 3px rgb(179 175 175);
   transition: 0.7s;
