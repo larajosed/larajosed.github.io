@@ -115,7 +115,7 @@ export default {
 }
 
 .hero-button:hover {
-  background-color: #000000;
+  background-color: #adaba9;
   transform: translateY(-5px);
   box-shadow: 0px 5px 5px rgba(158, 144, 123, 0.6);
   color: #cccccc;
@@ -145,7 +145,7 @@ export default {
 }
 
 .container-img {
-  max-width: 15em; /* Aumentado de 10em a 15em para pantallas grandes */
+  max-width: 15em;
   margin-bottom: 15px;
   transition: 0.8s ease;
   display: flex;
@@ -202,8 +202,8 @@ export default {
     min-height: 500px;
   }
   .container-img {
-    width: 200px; /* Aumentado de 150px a 200px para tabletas */
-    height: 200px; /* Aumentado de 150px a 200px para tabletas */
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
   }
 
@@ -217,15 +217,13 @@ export default {
   }
 
   .hero-button {
-    padding: 12px 25px;
-    font-size: 1em;
+    display: none;
   }
 }
-
 @media (max-width: 480px) {
   .container-img {
-    width: 180px; /* Aumentado de 150px a 180px para móviles pequeños */
-    height: 180px; /* Aumentado de 150px a 180px para móviles pequeños */
+    width: 180px;
+    height: 180px;
   }
 
   .hero-name {
