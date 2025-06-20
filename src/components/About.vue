@@ -1,13 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container about-me-section" id="sobre-mi">
     <div class="titulo">
       <h1>SOBRE MI</h1>
     </div>
   </div>
   <section>
-    <!-- <div class="container-img">
-      <img src="@/assets/images/foto.jpg" alt="FOTO" />
-    </div>-->
     <div class="text">
       <p>
         Soy un profesional con formación continua y experiencia en el desarrollo
@@ -42,11 +39,15 @@ section {
   justify-content: center;
   margin-bottom: 15px;
   transition: 0.8s ease;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 15px;
 }
 
 section:hover {
-  box-shadow: 0px 4px 16px -1px #97a7b3;
-  transform: 0.5s;
+  box-shadow: 0px 4px 16px -1px #000000;
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
 }
 
 .text {
@@ -54,10 +55,7 @@ section:hover {
   max-width: 35em;
   padding: 1em;
   font-family: sans-serif;
-}
-
-.container-img {
-  max-width: 10em;
+  color: #f0f0f0;
 }
 
 .titulo {
@@ -65,9 +63,9 @@ section:hover {
   font-family: Arial;
   font-weight: bold;
   font-size: 15px;
-  color: #5b5b5b;
-  text-shadow: 1px 0px #dbd5d5, 0px 1px #c7c3c3, 0px 0px #bdb8b8,
-    0px 2px #c4bfbf;
+  color: #e0e0e0;
+  text-shadow: 1px 0px #333333, 0px 1px #222222, 0px 0px #111111,
+    0px 2px #444444;
   justify-content: center;
   display: flex;
   letter-spacing: 2px;
@@ -75,7 +73,7 @@ section:hover {
 
 @media (min-width: 720px) {
   section {
-    background-color: #f1f1f1;
+    background-color: #1a1a1a;
     align-items: start;
   }
 

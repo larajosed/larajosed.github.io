@@ -88,26 +88,50 @@
 section {
   width: 100%;
   margin-bottom: 30px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 1px 8px -3px rgba(0, 0, 0, 0.5);
+  transition: 0.8s ease;
 }
 
 section:hover {
-  box-shadow: 0px 1px 8px -3px #333434;
-  transition: 1s;
-}
-
-.icon {
-  width: 4em;
-  margin-right: 1em;
-  display: inline-block;
+  box-shadow: 0px 4px 16px -1px #000000;
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
 }
 
 .text {
   display: flex;
-
   max-width: 35em;
   padding-inline-end: 1em;
   text-align: justify;
   font-family: sans-serif;
+  color: #f0f0f0;
+  flex-grow: 1;
+}
+
+.text-container {
+  margin-left: 25px;
+}
+
+.text-container i {
+  color: #a0a0a0;
+}
+
+.text-container b {
+  display: block;
+  font-size: 1.3em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.text-container p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #c0c0c0;
+  font-size: 0.95em;
+  text-align: justify;
 }
 
 .titulo {
@@ -115,17 +139,36 @@ section:hover {
   font-family: Arial;
   font-weight: bold;
   font-size: 15px;
-  color: #5b5b5b;
-  text-shadow: 1px 0px #dbd5d5, 0px 1px #c7c3c3, 0px 0px #bdb8b8,
-    0px 2px #c4bfbf;
+  color: #e0e0e0;
+  text-shadow: 1px 0px #333333, 0px 1px #222222, 0px 0px #111111,
+    0px 2px #444444;
   justify-content: center;
   display: flex;
   letter-spacing: 2px;
 }
 
+.logo-container {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.icon {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  filter: invert(100%);
+  display: block;
+}
 @media (min-width: 720px) {
   section {
-    background-color: #f1f1f1;
+    background-color: #1a1a1a;
     margin-bottom: 4em;
     display: flex;
     flex-flow: row wrap;
@@ -134,8 +177,9 @@ section:hover {
   }
 
   section:hover {
-    box-shadow: 0px 4px 16px -1px #97a7b3;
-    transform: 0.5s;
+    box-shadow: 0px 4px 16px -1px #000000;
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
   }
 
   .text {

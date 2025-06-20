@@ -3,29 +3,63 @@ import BarsIcon from "./icons/BarsIcon.vue";
 import PhoneIcon from "./icons/PhoneIcon.vue";
 import GithubIcon from "./icons/GithubIcon.vue";
 import EmailIcon from "./icons/EmailIcon.vue";
-import About from "./About.vue";
 import LinkedinIcon from "./icons/LinkedinIcon.vue";
 import WhatsappIcon from "./icons/WhatsappIcon.vue";
+import { RouterLink } from "vue-router";
 
 export default {
+  name: "NavBar",
   components: {
     BarsIcon,
     PhoneIcon,
     GithubIcon,
     EmailIcon,
-    About,
     LinkedinIcon,
     WhatsappIcon,
+    RouterLink,
   },
   data() {
     return {
       show: false,
     };
   },
+  watch: {
+    show(newValue) {
+      if (newValue) {
+        setTimeout(() => {
+          document.addEventListener("click", this.handleClickOutside);
+        }, 0);
+      } else {
+        document.removeEventListener("click", this.handleClickOutside);
+      }
+    },
+  },
   methods: {
-    showMenu: function () {
+    toggleMenu(event) {
+      if (event) {
+        event.stopPropagation();
+      }
       this.show = !this.show;
     },
+    closeMenu() {
+      this.show = false;
+    },
+    handleClickOutside(event) {
+      const toggler = this.$refs.navbarToggleButton;
+      const menu = this.$refs.navbarMenu;
+
+      if (
+        toggler &&
+        !toggler.contains(event.target) &&
+        menu &&
+        !menu.contains(event.target)
+      ) {
+        this.closeMenu();
+      }
+    },
+  },
+  beforeUnmount() {
+    document.removeEventListener("click", this.handleClickOutside);
   },
 };
 </script>
@@ -53,48 +87,105 @@ export default {
       </div>
       <div class="items">
         <a
-          href="https://api.whatsapp.com/send/?phone=34693537526"
+          href="https://api.whatsapp.com/send/?phone=346935537526"
           target="_blank"
         >
           <WhatsappIcon />
         </a>
       </div>
-      <div class="item-bar" id="#menu" @click="showMenu()">
+      <div class="item-bar" @click="toggleMenu()" ref="navbarToggleButton">
         <BarsIcon />
       </div>
     </div>
 
-    <div class="container-fluid" v-show="show">
-      <div class="navbar-nav">
-        <a class="text" href="#" @click="showMenu()">
-          <div class="nav-item">SOBRE MI</div></a
-        >
+    <transition name="slide-fade">
+      <div class="container-fluid" v-if="show" ref="navbarMenu">
+        <div class="navbar-nav">
+          <router-link to="/about" class="text" @click="closeMenu()">
+            <div class="nav-item">SOBRE MÍ</div>
+          </router-link>
 
-        <a class="text" @click="showMenu()" href="#/training">
-          <div class="nav-item">FORMACIÓN</div></a
-        >
+          <router-link to="/training" class="text" @click="closeMenu()">
+            <div class="nav-item">FORMACIÓN</div>
+          </router-link>
 
-        <a class="text" @click="showMenu()" href="#/experience"
-          ><div class="nav-item">EXPERIENCIA PROFESIONAL</div></a
-        >
+          <router-link to="/experience" class="text" @click="closeMenu()">
+            <div class="nav-item">EXPERIENCIA PROFESIONAL</div>
+          </router-link>
 
-        <a class="text" @click="showMenu()" href="#/projects">
-          <div class="nav-item">PROYECTOS</div></a
-        >
+          <router-link to="/projects" class="text" @click="closeMenu()">
+            <div class="nav-item">PROYECTOS</div>
+          </router-link>
 
-        <a class="text" @click="showMenu()" href="#/technologies">
-          <div class="nav-item">TECNOLOGÍAS</div></a
-        >
+          <router-link to="/technologies" class="text" @click="closeMenu()">
+            <div class="nav-item">TECNOLOGÍAS</div>
+          </router-link>
+        </div>
       </div>
-    </div>
+    </transition>
   </nav>
 </template>
 
 <style scoped>
 #navbar {
-  background-color: #3d3c3cd1;
-  background-blend-mode: darken;
-  top: 2em;
+  background-color: #2a2a2a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container-icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.items {
+  width: 2.8em;
+  height: 2.8em;
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.items a {
+  color: #f0f0f0;
+  transition: color 0.3s ease;
+}
+
+.items a:hover {
+  color: #c0c0c0;
+}
+
+.item-bar {
+  width: auto;
+  margin-left: auto;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 1.5em;
+  color: #f0f0f0;
+}
+
+.item-bar:hover {
+  color: #c0c0c0;
+}
+
+.container-fluid {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #2a2a2a;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  padding-bottom: 10px;
+  z-index: 999;
 }
 
 .navbar-nav {
@@ -103,73 +194,48 @@ export default {
   padding: 0;
 }
 
-.navbar-nav > div {
-  float: none;
-  list-style: none;
+.navbar-nav .text {
+  display: block;
   text-decoration: none;
-  padding: 0.5em;
-}
-
-a {
-  color: #e6e6e6;
-}
-
-a:link {
-  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: bold;
 }
 
 .nav-item {
-  transition: 0.7s;
-  padding: 8px;
+  padding: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .nav-item:hover {
-  background-color: rgb(249, 249, 249);
-  color: rgb(126, 128, 130);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
-.nav-item:hover a {
-  color: rgb(126, 128, 130);
-  text-shadow: 0px 4px 3px rgb(179 175 175);
-  transition: 0.7s;
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
 }
 
-.nav-container-icons {
-  display: flex;
-  width: 100%;
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
 }
 
-.nav-container-icons .item-bar {
-  justify-content: end;
+.slide-fade-enter-to,
+.slide-fade-leave-from {
+  transform: translateY(0);
+  opacity: 1;
 }
 
-.items {
-  width: 4em;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-}
-
-.items a {
-  transition: 0.5s;
-}
-.items a:hover {
-  color: rgb(126, 128, 130);
-}
-
-.item-bar {
-  width: 100%;
-  margin-top: 0.5em;
-  text-align: end;
-  margin-right: 0.5em;
-  border: 0;
-  cursor: pointer;
-}
-
-.item-bar {
-  transition: 0.5s;
-  color: #e6e6e6;
-}
-
-.item-bar:hover {
-  color: rgb(126, 128, 130);
+@media (max-width: 768px) {
+  .items {
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 1em;
+  }
+  .item-bar {
+    font-size: 1.3em;
+  }
 }
 </style>

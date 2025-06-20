@@ -131,54 +131,79 @@ export default defineComponent({
 <style scoped>
 :deep(.popper) {
   --popper-theme-background-color: #333333;
-  --popper-theme-background-color-hover: #abababd1;
+  --popper-theme-background-color-hover: #444444;
   --popper-theme-text-color: white;
   --popper-theme-border-width: 0px;
   --popper-theme-border-radius: 6px;
   --popper-theme-padding: 12px;
-  --popper-theme-box-shadow: 0 4px 15px -3px #abababd1;
+  --popper-theme-box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.7);
 }
+
 .container-technologies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  display: -ms-flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px;
+  background-color: #000000;
+  padding: 20px;
 }
 
 .container-column {
-  width: 25%;
-  margin-bottom: 5px;
-  margin: 5px 5px 5px 5px;
+  width: calc(50% - 15px);
+  height: 200px;
+  max-width: 400px;
+  min-width: 280px;
+  box-sizing: border-box;
+
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 1px 8px -3px rgba(0, 0, 0, 0.5);
+  transition: 0.8s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .container-column h1 {
-  align-items: center;
   text-align: center;
-  margin: 0;
+  margin: 0 0 15px 0;
+  color: #e0e0e0;
+  font-size: 1.2em;
 }
 
 .icon-container {
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  background-color: #f1f1f1;
+  background-color: #2c2c2c;
   display: flex;
   transition: 0.8s ease;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  flex-grow: 1;
+  width: 100%;
+  align-content: center;
 }
 
 .icon-container:hover {
-  box-shadow: 0px 4px 16px -1px #97a7b3;
-  transform: 0.5s;
+  box-shadow: 0px 4px 16px -1px #000000;
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
 }
 
 .icon {
-  margin-right: 1em;
   margin: 1em;
   display: inline-block;
+  max-width: 4em;
+  height: auto;
+  filter: invert(100%);
+  transition: 0.3s ease;
 }
 
 .titulo {
@@ -186,40 +211,34 @@ export default defineComponent({
   font-family: Arial;
   font-weight: bold;
   font-size: 15px;
-  color: #5b5b5b;
-  text-shadow: 1px 0px #dbd5d5, 0px 1px #c7c3c3, 0px 0px #bdb8b8,
-    0px 2px #c4bfbf;
+  color: #e0e0e0;
+  text-shadow: 1px 0px #333333, 0px 1px #222222, 0px 0px #111111,
+    0px 2px #444444;
   justify-content: center;
   display: flex;
   letter-spacing: 2px;
 }
 
-@media (min-width: 720px) {
-  .icon-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-
-  .icon {
-    max-height: 4em;
-    max-width: 5em;
-  }
-
+@media (max-width: 767px) {
   .container-column {
-    flex-direction: column;
+    width: 90%;
+    height: auto;
+    max-width: none;
   }
+}
 
-  @media (max-width: 400px) {
-    .container-technologies {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-    }
+@media (min-width: 768px) {
+  .container-column {
+    width: calc(50% - 25px);
+    height: 230px;
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-technologies {
+    max-width: 1100px;
+    margin: 0 auto;
   }
 }
 </style>

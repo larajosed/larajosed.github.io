@@ -1,64 +1,46 @@
+<template>
+  <div id="app">
+    <Navbar />
+
+    <main>
+      <RouterView></RouterView>
+    </main>
+  </div>
+</template>
+
 <script>
 import Navbar from "./components/NavBar.vue";
 
 export default {
-  components: { Navbar },
+  components: {
+    Navbar,
+  },
   data() {
     return {};
   },
 };
 </script>
 
-<template>
-  <header>
-    <h1>Jose Daniel Lara Meza</h1>
-    <h3>Full Stack Web Developer</h3>
-  </header>
-
-  <main>
-    <Navbar />
-    <section>
-      <RouterView></RouterView>
-    </section>
-  </main>
-</template>
-
-<style scoped>
-header {
-  height: 7em;
-  position: relative;
-}
-
-header h1 {
+<style>
+body,
+html {
   margin: 0;
-  display: inline-block;
-  position: absolute;
-  top: 1em;
-  left: 0.2em;
-  font-size: 1.6em;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #f0f0f0;
+}
+main {
+  margin-top: 0;
 }
 
-header h3 {
-  margin: 0;
-  display: inline-block;
-  position: absolute;
-  top: 3em;
-  left: 3.2em;
+#app {
+  padding-top: 34px;
 }
 
-@media (min-width: 720px) {
-  header {
-    height: 11em;
-  }
-
-  header h1 {
-    top: 1em;
-    left: 4em;
-  }
-
-  header h3 {
-    top: 4em;
-    left: 15em;
-  }
+section {
+  width: 100%;
 }
 </style>

@@ -39,14 +39,19 @@ export default {
         </p>
         <div
           v-show="show"
-          class="text-container"
-          v-for="paragraph in jsonData.secondaryParagraph"
+          class="secondary-paragraph-container"
+          v-for="(paragraph, index) in jsonData.secondaryParagraph"
+          :key="index"
         >
           <p v-html="paragraph"></p>
         </div>
-        <div v-show="show" class="container">
+        <div v-show="show" class="images-container">
           <section class="slider">
-            <img v-for="image in jsonData.images" :src="image" />
+            <img
+              v-for="(image, index) in jsonData.images"
+              :src="image"
+              :key="index"
+            />
           </section>
         </div>
         <div class="snapshot" @click="showSnapshot()">
@@ -58,55 +63,104 @@ export default {
 </template>
 
 <style scoped>
+section {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0px 1px 8px -3px rgba(0, 0, 0, 0.5);
+  transition: 0.8s ease;
+}
+
+section:hover {
+  box-shadow: 0px 4px 16px -1px #000000;
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
+}
+
+.logo-container {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.icon {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  filter: invert(100%);
+  display: block;
+}
+
 .text {
   display: flex;
   max-width: 35em;
   padding-inline-end: 1em;
   text-align: justify;
-}
-
-.icon {
-  width: 8em;
-  margin-right: 1em;
-  display: inline-block;
-  margin-left: 50px;
+  font-family: sans-serif;
+  color: #f0f0f0;
+  flex-grow: 1;
 }
 
 .text-container {
-  font-weight: normal;
-  font-family: sans-serif;
+  margin-left: 25px;
+}
+
+.text-container b {
+  display: block;
+  font-size: 1.3em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.text-container p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #c0c0c0;
+  font-size: 0.95em;
+  text-align: justify;
+}
+
+.secondary-paragraph-container p {
+  color: #c0c0c0;
 }
 
 .sign {
-  border: 1px solid #858586;
+  border: 1px solid #666666;
   border-radius: 0.8em;
   font-size: 2em;
   font-family: fantasy;
   width: 1.6em;
   text-decoration: none;
-  color: #858586;
+  color: #a0a0a0;
+  background-color: #2c2c2c;
+  cursor: pointer;
+}
+
+.sign:hover {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border-color: #aaaaaa;
 }
 
 .snapshot {
   display: flex;
   justify-content: end;
   align-items: end;
-  margin-top: 5px;
-}
-
-section {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-section:hover {
-  box-shadow: 0px 1px 8px -3px #333434;
+  margin-top: 15px;
 }
 
 .slider {
   display: flex;
   width: 100%;
   height: 430px;
+  margin-top: 15px;
 }
 
 .slider img {
@@ -115,8 +169,9 @@ section:hover {
   object-fit: cover;
   opacity: 0.8;
   transition: 1s ease;
-  box-shadow: 0px 1px 8px -3px #333434;
+  box-shadow: 0px 1px 8px -3px rgba(0, 0, 0, 0.7);
   height: 460px;
+  border-radius: 5px;
 }
 
 .slider img:hover {
@@ -124,12 +179,12 @@ section:hover {
   width: 100%;
   opacity: 1;
   filter: contrast(120%);
-  box-shadow: 0px 1px 8px -3px #333434;
+  box-shadow: 0px 4px 16px -1px #000000;
 }
 
 @media (min-width: 720px) {
   section {
-    background-color: #f1f1f1;
+    background-color: #1a1a1a;
     margin-bottom: 4em;
     display: flex;
     flex-flow: row wrap;
@@ -138,8 +193,9 @@ section:hover {
   }
 
   section:hover {
-    box-shadow: 0px 4px 16px -1px #97a7b3;
-    transform: 0.5s;
+    box-shadow: 0px 4px 16px -1px #000000;
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
   }
 
   .text {

@@ -58,13 +58,17 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container projects-section" id="proyectos">
     <div class="titulo">
       <h1>PROYECTOS</h1>
     </div>
   </div>
   <div class="project-box">
-    <Structure :jsonData="project" v-for="project in arrProjects"></Structure>
+    <Structure
+      :jsonData="project"
+      v-for="project in arrProjects"
+      :key="project.title"
+    ></Structure>
   </div>
 </template>
 
@@ -72,6 +76,7 @@ export default {
 .project-box {
   display: flex;
   flex-direction: column;
+  background-color: #000000;
 }
 
 .titulo {
@@ -79,11 +84,17 @@ export default {
   font-family: Arial;
   font-weight: bold;
   font-size: 15px;
-  color: #5b5b5b;
-  text-shadow: 1px 0px #dbd5d5, 0px 1px #c7c3c3, 0px 0px #bdb8b8,
-    0px 2px #c4bfbf;
+  color: #e0e0e0;
+  text-shadow: 1px 0px #333333, 0px 1px #222222, 0px 0px #111111,
+    0px 2px #444444;
   justify-content: center;
   display: flex;
   letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    padding: 10px;
+  }
 }
 </style>
