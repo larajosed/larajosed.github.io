@@ -69,10 +69,10 @@
               alt="MOCKITO"
             />
           </Popper>
-          <Popper hover content="Liquidbase">
+          <Popper hover content="Liquibase">
             <img
               class="icon"
-              src="@/assets/images/backend/Liquidbase.png"
+              src="@/assets/images/backend/LiquiBase.png"
               alt="LIQUIDBASE"
             />
           </Popper>
