@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "vue": "^3.2.45",
+    "vue-gtag": "^3.5.1",
     "vue-router": "^4.1.6",
     "vue3-popper": "^1.5.0",
     "vuejs-title": "^1.0.16"
