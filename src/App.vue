@@ -29,11 +29,7 @@ html {
   font-family: "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000000;
   color: #f0f0f0;
-}
-main {
-  margin-top: 0;
 }
 
 #app {

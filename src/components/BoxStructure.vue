@@ -1,26 +1,10 @@
 <script>
 export default {
+  name: "BoxStructure",
   props: {
     jsonData: {
       type: Object,
       required: true,
-    },
-  },
-  data() {
-    return {
-      show: false,
-      sign: "+",
-    };
-  },
-  methods: {
-    showSnapshot: function () {
-      if (this.show == false) {
-        this.sign = "-";
-        this.show = !this.show;
-      } else {
-        this.sign = "+";
-        this.show = !this.show;
-      }
     },
   },
 };
@@ -34,28 +18,15 @@ export default {
       </div>
       <div class="text-container">
         <b>{{ jsonData.title }}</b>
-        <p>
-          {{ jsonData.mainParagraph }}
-        </p>
-        <div
-          v-show="show"
-          class="secondary-paragraph-container"
-          v-for="(paragraph, index) in jsonData.secondaryParagraph"
+        <p
+          v-for="(paragraph, index) in jsonData.mainParagraph"
           :key="index"
-        >
-          <p v-html="paragraph"></p>
-        </div>
-        <div v-show="show" class="images-container">
-          <section class="slider">
-            <img
-              v-for="(image, index) in jsonData.images"
-              :src="image"
-              :key="index"
-            />
-          </section>
-        </div>
-        <div class="snapshot" @click="showSnapshot()">
-          <button class="sign">{{ this.sign }}</button>
+          v-html="paragraph"
+        ></p>
+        <div class="containerDate">
+          <i>{{ jsonData.date }}</i>
+          <br />
+          <i>{{ jsonData.country }}</i>
         </div>
       </div>
     </div>
@@ -130,59 +101,8 @@ section:hover {
   text-align: justify;
 }
 
-.secondary-paragraph-container p {
-  color: #c0c0c0;
-}
-
-.sign {
-  border: 1px solid #666666;
-  border-radius: 0.8em;
-  font-size: 2em;
-  font-family: fantasy;
-  width: 1.6em;
-  text-decoration: none;
-  color: #a0a0a0;
-  background-color: #2c2c2c;
-  cursor: pointer;
-}
-
-.sign:hover {
-  background-color: #3a3a3a;
-  color: #ffffff;
-  border-color: #aaaaaa;
-}
-
-.snapshot {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  margin-top: 15px;
-}
-
-.slider {
-  display: flex;
-  width: 100%;
-  height: 430px;
-  margin-top: 15px;
-}
-
-.slider img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: 1s ease;
-  box-shadow: 0px 1px 8px -3px rgba(0, 0, 0, 0.7);
-  height: 460px;
-  border-radius: 5px;
-}
-
-.slider img:hover {
-  cursor: crosshair;
-  width: 100%;
-  opacity: 1;
-  filter: contrast(120%);
-  box-shadow: 0px 4px 16px -1px #000000;
+.containerDate {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -218,6 +138,10 @@ section:hover {
   .fluid-box {
     max-width: 55em;
     margin: 2em;
+  }
+
+  .containerDate {
+    text-align: start;
   }
 }
 </style>

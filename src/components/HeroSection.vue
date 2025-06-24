@@ -12,18 +12,23 @@
       >
         Desarrollador Web Full Stack
       </p>
-      <button ref="portfolioButton" class="hero-button" @click="toggleMenu">
-        Ver mi Portafolio
+      <button
+        :class="{ 'is-hidden': buttonHidden }"
+        ref="portfolioButton"
+        class="hero-button animate__animated animate__fadeInUp animate__delay-2s"
+        @click="toggleMenu"
+      >
+        Visita mi Portfolio
       </button>
     </div>
 
-    <HeroMenu
-      ref="heroMenuComponent"
-      :show="showHeroMenu"
-      :buttonTop="buttonPosition.top"
-      :buttonHeight="buttonPosition.height"
-      @item-clicked="closeHeroMenu"
-    />
+    <div style="height: 50px">
+      <HeroMenu
+        ref="heroMenuComponent"
+        :show="showHeroMenu"
+        @item-clicked="closeHeroMenu"
+      />
+    </div>
   </section>
 </template>
 
@@ -38,69 +43,24 @@ export default {
   data() {
     return {
       showHeroMenu: false,
-      buttonPosition: {
-        top: 0,
-        height: 0,
-      },
+      buttonHidden: false,
     };
   },
-  watch: {
-    showHeroMenu(newValue) {
-      if (newValue) {
-        setTimeout(() => {
-          document.addEventListener("click", this.handleClickOutside);
-        }, 0);
-      } else {
-        document.removeEventListener("click", this.handleClickOutside);
-      }
-    },
-  },
   methods: {
-    toggleMenu(event) {
-      if (event) {
-        event.stopPropagation();
-      }
-      this.showHeroMenu = !this.showHeroMenu;
-
-      if (this.showHeroMenu) {
-        this.$nextTick(() => {
-          const button = this.$refs.portfolioButton;
-          if (button) {
-            const rect = button.getBoundingClientRect();
-            const heroSectionRect = this.$el.getBoundingClientRect();
-
-            this.buttonPosition.top = rect.top - heroSectionRect.top;
-            this.buttonPosition.height = rect.height;
-          }
-        });
-      }
-    },
-    handleClickOutside(event) {
-      const button = this.$refs.portfolioButton;
-      const menu = this.$refs.heroMenuComponent?.$el;
-      if (
-        button &&
-        !button.contains(event.target) &&
-        menu &&
-        !menu.contains(event.target)
-      ) {
-        this.closeHeroMenu();
-      }
+    toggleMenu() {
+      this.showHeroMenu = true;
+      this.buttonHidden = true;
     },
     closeHeroMenu() {
       this.showHeroMenu = false;
     },
-  },
-
-  beforeUnmount() {
-    document.removeEventListener("click", this.handleClickOutside);
   },
 };
 </script>
 
 <style scoped>
 .hero-button {
-  background-color: #c1d2e4;
+  background-color: #cecece;
   color: rgb(32, 28, 28);
   padding: 15px 35px;
   border-radius: 50px;
@@ -111,32 +71,37 @@ export default {
   box-shadow: 2px 0px 2px 2px rgba(146, 146, 145, 0.4);
   border: none;
   cursor: pointer;
-  margin-top: 20px;
+  opacity: 1;
+  transition: opacity 0.8s ease, visibility 0.2s ease;
 }
 
 .hero-button:hover {
   background-color: #adaba9;
   transform: translateY(-5px);
   box-shadow: 0px 5px 5px rgba(158, 144, 123, 0.6);
-  color: #cccccc;
+}
+
+.hero-button.is-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hero-section {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
   background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
   color: #f0f0f0;
   text-align: center;
-  padding: 80px 20px;
   min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   overflow: hidden;
 }
 
 .hero-content {
-  z-index: 10;
   max-width: 900px;
   width: 100%;
   display: flex;
@@ -145,9 +110,8 @@ export default {
 }
 
 .container-img {
-  max-width: 15em;
+  max-width: 17em;
   margin-bottom: 15px;
-  transition: 0.8s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,12 +137,18 @@ export default {
 }
 
 .hero-name {
-  font-family: "Arial Black", Arial, sans-serif;
+  font-family: system-ui;
   font-size: 3.5em;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   letter-spacing: 2px;
+  font-weight: 300;
+
+  color: #e0e0e0;
+  text-shadow: 1px 0px #333333, 0px 1px #222222, 0px 0px #111111,
+    0px 2px #444444;
+  letter-spacing: -1px;
 }
 
 .hero-tagline {
@@ -187,6 +157,7 @@ export default {
   color: #cccccc;
   margin-bottom: 40px;
   line-height: 1.5;
+  color: #e0e0e0;
 }
 
 .hero-buttom {
@@ -218,6 +189,9 @@ export default {
 
   .hero-button {
     display: none;
+  }
+  .container-img:hover img {
+    transform: scale(1);
   }
 }
 @media (max-width: 480px) {

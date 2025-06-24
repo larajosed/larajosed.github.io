@@ -1,5 +1,7 @@
 <script>
 import Structure from "./Structure.vue";
+import TitleStructure from "./TitleStructure.vue";
+
 export default {
   data() {
     return {
@@ -53,48 +55,18 @@ export default {
   },
   components: {
     Structure,
+    TitleStructure,
   },
 };
 </script>
 
 <template>
-  <div class="container projects-section" id="proyectos">
-    <div class="titulo">
-      <h1>PROYECTOS</h1>
-    </div>
-  </div>
-  <div class="project-box">
-    <Structure
-      :jsonData="project"
-      v-for="project in arrProjects"
-      :key="project.title"
-    ></Structure>
-  </div>
+  <TitleStructure titleText="PROYECTOS"></TitleStructure>
+  <Structure
+    :jsonData="project"
+    v-for="project in arrProjects"
+    :key="project.title"
+  ></Structure>
 </template>
 
-<style scoped>
-.project-box {
-  display: flex;
-  flex-direction: column;
-  background-color: #000000;
-}
-
-.titulo {
-  text-align: center;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 15px;
-  color: #e0e0e0;
-  text-shadow: 1px 0px #333333, 0px 1px #222222, 0px 0px #111111,
-    0px 2px #444444;
-  justify-content: center;
-  display: flex;
-  letter-spacing: 2px;
-}
-
-@media (max-width: 768px) {
-  .project-box {
-    padding: 10px;
-  }
-}
-</style>
+<style scoped></style>

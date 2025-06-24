@@ -1,26 +1,22 @@
 <template>
-  <div class="container">
-    <div class="titulo">
-      <h1>TECNOLOGÍAS</h1>
-    </div>
-  </div>
+  <TitleStructure titleText="TECNOLOGÍAS"></TitleStructure>
   <section>
     <div class="container-technologies">
       <div class="container-column">
         <h1>FRONTEND</h1>
         <div class="icon-container">
-          <Popper hover content="JavasCript">
-            <img
-              class="icon"
-              src="@/assets/images/frontend/JavasCript-logo.png"
-              alt="JAVASCRIPT"
-            />
-          </Popper>
           <Popper hover content="Angular">
             <img
               class="icon"
               src="@/assets/images/frontend/angular.png"
               alt="ANGULAR"
+            />
+          </Popper>
+          <Popper hover content="React">
+            <img
+              class="icon"
+              src="@/assets/images/frontend/React.png"
+              alt="REACT"
             />
           </Popper>
           <Popper hover content="Bootstrap">
@@ -73,6 +69,13 @@
               alt="MOCKITO"
             />
           </Popper>
+          <Popper hover content="Liquidbase">
+            <img
+              class="icon"
+              src="@/assets/images/backend/Liquidbase.png"
+              alt="LIQUIDBASE"
+            />
+          </Popper>
         </div>
       </div>
       <div class="container-column">
@@ -99,16 +102,16 @@
         <h1>OTROS</h1>
         <div class="icon-container">
           <Popper hover content="Git">
-            <img class="icon" src="@/assets/images/otros/Git.png" alt="Git" />
+            <img class="icon" src="@/assets/images/otros/Git.png" alt="GIT" />
           </Popper>
           <Popper hover content="Jira">
-            <img class="icon" src="@/assets/images/otros/JIRA.png" alt="JIRA" />
+            <img class="icon" src="@/assets/images/otros/Jira.png" alt="JIRA" />
           </Popper>
-          <Popper hover content="Sourcetree">
+          <Popper hover content="Figma">
             <img
               class="icon"
-              src="@/assets/images/otros/sourcetree.png"
-              alt="SOURCETREE"
+              src="@/assets/images/otros/Figma.png"
+              alt="FIGMA"
             />
           </Popper>
         </div>
@@ -120,10 +123,12 @@
 <script>
 import { defineComponent } from "vue";
 import Popper from "vue3-popper";
+import TitleStructure from "./TitleStructure.vue";
 
 export default defineComponent({
   components: {
     Popper,
+    TitleStructure,
   },
 });
 </script>
@@ -144,7 +149,6 @@ export default defineComponent({
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #000000;
   padding: 20px;
 }
 
@@ -198,11 +202,10 @@ export default defineComponent({
 }
 
 .icon {
-  margin: 1em;
+  margin: 5px;
   display: inline-block;
   max-width: 4em;
   height: auto;
-  filter: invert(100%);
   transition: 0.3s ease;
 }
 
