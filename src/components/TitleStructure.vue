@@ -27,6 +27,7 @@ export default {
 }
 
 .title {
+  padding: 5px;
   text-align: start;
   font-family: system-ui;
   width: 55em;
@@ -35,7 +36,9 @@ export default {
     0px 2px #444444;
   letter-spacing: -1px;
 }
-h1 {
+
+.title h1 {
+  margin: 0px;
   font-weight: 100;
   font-size: 2em;
 }
@@ -43,8 +46,14 @@ h1 {
 .line {
   width: 50%;
   border-top: solid 1px;
-  margin-top: -28px;
-  margin-left: 20px;
+  margin-top: -8px;
+  margin-left: 16px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
 }
 </style>

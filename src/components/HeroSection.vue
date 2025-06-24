@@ -169,7 +169,7 @@ export default {
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 60px 15px;
+    top: 50px;
     min-height: 500px;
   }
   .container-img {
