@@ -6,14 +6,12 @@ import { configure, createGtag } from "vue-gtag";
 
 configure({
   tagId: "G-HBQTGJQJH8",
-});
-
-const gtag = createGtag({
-  tagId: "G-HBQTGJQJH8",
+  pageTracker: {
+    router,
+  },
 });
 
 const app = createApp(App);
 app.use(router);
-app.use(gtag);
 
 app.mount("#app");
