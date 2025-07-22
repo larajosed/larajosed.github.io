@@ -29,7 +29,7 @@ export default {
         },
         {
           logo: "images/deimos.png",
-          tittle: "Desarrollador Full Stack Jr - Elecnor Deimos.",
+          title: "Desarrollador Full Stack Jr - Elecnor Deimos.",
           mainParagraph: [
             "En mi experiencia como desarrollador full stack, participé en varios proyectos, enfocándome principalmente en el desarrollo de aplicaciones para el frontend. Utilicé Angular y Angular Material, y fui responsable tanto de la resolución de incidencias como de la creación de nuevas funcionalidades. Para la visualización de datos complejos, como gráficas y esquemas de conexión, integré la potente librería D3.js en las aplicaciones.",
           ],
