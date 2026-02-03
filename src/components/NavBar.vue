@@ -101,16 +101,8 @@ export default {
     <transition name="slide-fade">
       <div class="container-fluid" v-if="show" ref="navbarMenu">
         <div class="navbar-nav">
-          <router-link to="/about" class="text" @click="closeMenu()">
-            <div class="nav-item">SOBRE MÍ</div>
-          </router-link>
-
-          <router-link to="/training" class="text" @click="closeMenu()">
-            <div class="nav-item">FORMACIÓN</div>
-          </router-link>
-
           <router-link to="/experience" class="text" @click="closeMenu()">
-            <div class="nav-item">EXPERIENCIA PROFESIONAL</div>
+            <div class="nav-item">EXPERIENCIA</div>
           </router-link>
 
           <router-link to="/projects" class="text" @click="closeMenu()">
@@ -119,6 +111,14 @@ export default {
 
           <router-link to="/technologies" class="text" @click="closeMenu()">
             <div class="nav-item">TECNOLOGÍAS</div>
+          </router-link>
+
+          <router-link to="/about" class="text" @click="closeMenu()">
+            <div class="nav-item">SOBRE MÍ</div>
+          </router-link>
+
+          <router-link to="/training" class="text" @click="closeMenu()">
+            <div class="nav-item">FORMACIÓN</div>
           </router-link>
         </div>
       </div>

@@ -10,24 +10,24 @@ export default {
         {
           logo: "images/ilerna.png",
           title:
-            "Ilerna FP: Técnico Superior en Desarrollo de Aplicaciones Web.",
+            "Técnico Superior en Desarrollo de Aplicaciones Web",
           mainParagraph: [
-            " Durante mis estudios en Ilerna FP, me especialicé en el desarrollo, implantación y mantenimiento de aplicaciones web robustas y eficientes. Adquirí conocimientos sólidos en la creación de APIs REST utilizando Node.js y tambien Spring Boot para el backend, gestionando bases de datos SQL de manera eficaz. También aprendí a diseñar interfaces de usuario intuitivas y responsivas con HTML, CSS y JavaScript, garantizando el acceso seguro a los datos y el cumplimiento de los estándares de accesibilidad, usabilidad y calidad.",
+            "<strong>Ilerna FP</strong> - Especialización en desarrollo web full-stack con tecnologías modernas: APIs REST con Node.js y Spring Boot, bases de datos SQL, y diseño de interfaces responsivas con HTML, CSS y JavaScript.",
           ],
 
-          date: "Feb. 2023 - May. 2025.",
+          date: "Feb. 2023 - May. 2025",
 
-          country: "Madrid, España.",
+          country: "Madrid, España",
         },
 
         {
           logo: "images/idBootcamps.png",
-          title: "ID Bootcamp: Programación y desarrollo web Full Stack.",
+          title: "Programación y Desarrollo Web Full Stack",
           mainParagraph: [
-            "Adquirí habilidades integrales en el desarrollo de aplicaciones web full-stack, centrándome en el ecosistema JavaScript. Me especialicé en el potente stack MEAN (MongoDB, Express, Angular, Node.js), lo que me permite desenvolverme con soltura en cada etapa del ciclo de vida de una aplicación web.",
+            "<strong>ID Bootcamp</strong> - Bootcamp intensivo (450 horas) enfocado en el stack MEAN (MongoDB, Express, Angular, Node.js) y desarrollo de aplicaciones web modernas.",
           ],
-          date: "450 horas.",
-          country: "Madrid, España.",
+          date: "450 horas",
+          country: "Madrid, España",
         },
       ],
     };

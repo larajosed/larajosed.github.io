@@ -19,11 +19,25 @@
               alt="REACT"
             />
           </Popper>
+          <Popper hover content="Vue.js">
+            <img
+              class="icon"
+              src="@/assets/images/frontend/vue.png"
+              alt="VUE"
+            />
+          </Popper>
           <Popper hover content="Bootstrap">
             <img
               class="icon"
               src="@/assets/images/frontend/bootstrap.png"
               alt="BOOTSTRAP"
+            />
+          </Popper>
+          <Popper hover content="jQuery">
+            <img
+              class="icon"
+              src="@/assets/images/frontend/jquery.png"
+              alt="JQUERY"
             />
           </Popper>
           <Popper hover content="Jest">
@@ -32,9 +46,6 @@
               src="@/assets/images/frontend/jest.png"
               alt="JEST"
             />
-          </Popper>
-          <Popper hover content="D3">
-            <img class="icon" src="@/assets/images/frontend/d3.png" alt="D3" />
           </Popper>
         </div>
       </div>
@@ -48,7 +59,7 @@
               alt="Java"
             />
           </Popper>
-          <Popper hover content="Spring">
+          <Popper hover content="Spring Boot">
             <img
               class="icon"
               src="@/assets/images/backend/spring-logo.png"
@@ -79,7 +90,7 @@
         </div>
       </div>
       <div class="container-column">
-        <h1>BBDD</h1>
+        <h1>BASES DE DATOS</h1>
         <div class="icon-container">
           <Popper hover content="MySQL">
             <img
@@ -99,7 +110,7 @@
         </div>
       </div>
       <div class="container-column">
-        <h1>OTROS</h1>
+        <h1>HERRAMIENTAS</h1>
         <div class="icon-container">
           <Popper hover content="Git">
             <img class="icon" src="@/assets/images/otros/Git.png" alt="GIT" />

@@ -11,23 +11,18 @@ export default {
   <section>
     <div class="text">
       <p>
-        Soy un profesional en formación continua y experiencia en el desarrollo
-        de aplicaciones web full-stack. Me caracterizo por ser una persona
-        resolutiva, orientada a resultados y con una gran pasión por el
-        aprendizaje y el crecimiento profesional.
+        Desarrollador Full Stack con más de 2 años de experiencia en el desarrollo de aplicaciones web escalables y eficientes. 
+        Especializado en Angular, Spring Boot y arquitecturas REST, con un sólido dominio de metodologías ágiles, Test-Driven Development (TDD) y trabajo en equipo.
       </p>
       <p>
-        He finalizado mis estudios de Técnico Superior en Desarrollo de
-        Aplicaciones Web, consolidando mis conocimientos y preparándome para
-        nuevos desafíos.
+        He trabajado en proyectos end-to-end, desde el diseño de interfaces responsivas con Angular Material y Bootstrap, 
+        hasta la implementación de APIs robustas con Spring Boot, Node.js y Express. Experiencia en bases de datos SQL y NoSQL, 
+        gestión de versiones con Git, y testing con Jest, JUnit y Mockito.
       </p>
       <p>
-        Mi objetivo es iniciar mi carrera como desarrollador web junior en un
-        entorno dinámico, donde pueda integrarme en un equipo, aportar valor,
-        aprender y seguir potenciando mis habilidades. Estoy comprometido con el
-        crecimiento continuo, tanto a nivel personal como profesional, y listo
-        para asumir cada reto con entusiasmo, colaborando para alcanzar los
-        objetivos del equipo.
+        Me caracterizo por ser una persona resolutiva, orientada a resultados y comprometida con la excelencia técnica. 
+        Busco constantemente mejorar mis habilidades y aplicar las mejores prácticas de desarrollo para crear soluciones de calidad 
+        que generen valor real para usuarios y equipos.
       </p>
     </div>
   </section>
