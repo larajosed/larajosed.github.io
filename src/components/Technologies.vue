@@ -83,7 +83,7 @@
           <Popper hover content="Liquibase">
             <img
               class="icon"
-              src="@/assets/images/backend/LiquiBase.png"
+              src="@/assets/images/backend/Liquibase.png"
               alt="LIQUIDBASE"
             />
           </Popper>
@@ -116,7 +116,7 @@
             <img class="icon" src="@/assets/images/otros/Git.png" alt="GIT" />
           </Popper>
           <Popper hover content="Jira">
-            <img class="icon" src="@/assets/images/otros/Jira.png" alt="JIRA" />
+            <img class="icon" src="@/assets/images/otros/JIRA.png" alt="JIRA" />
           </Popper>
           <Popper hover content="Figma">
             <img
