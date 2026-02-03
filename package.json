@@ -24,6 +24,8 @@
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "prettier": "^2.7.1",
+    "recursive-copy": "^2.0.14",
+    "recursive-copy-cli": "^1.0.20",
     "vite": "^4.0.0"
   }
 }
