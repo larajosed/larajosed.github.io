@@ -13,14 +13,9 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    component: About,
-  },
-  {
-    path: "/training",
-    name: "training",
-    component: Training,
+    path: "/experience",
+    name: "experience",
+    component: Experience,
   },
   {
     path: "/projects",
@@ -33,9 +28,14 @@ const routes = [
     component: Technologies,
   },
   {
-    path: "/experience",
-    name: "experience",
-    component: Experience,
+    path: "/about",
+    name: "about",
+    component: About,
+  },
+  {
+    path: "/training",
+    name: "training",
+    component: Training,
   },
 ];
 

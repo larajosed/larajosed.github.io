@@ -37,6 +37,55 @@ export default {
         <p>
           {{ jsonData.mainParagraph }}
         </p>
+        
+        <!-- Technology badges -->
+        <div v-if="jsonData.technologies" class="tech-badges">
+          <span
+            v-for="(tech, index) in jsonData.technologies"
+            :key="index"
+            class="tech-badge"
+            :style="{ borderColor: tech.color, color: tech.color }"
+          >
+            {{ tech.name }}
+          </span>
+        </div>
+
+        <!-- Project links -->
+        <div v-if="jsonData.githubUrl || jsonData.demoUrl" class="project-links">
+          <a
+            v-if="jsonData.githubUrl"
+            :href="jsonData.githubUrl"
+            target="_blank"
+            class="project-link"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a
+            v-if="jsonData.demoUrl && jsonData.demoUrl !== '#'"
+            :href="jsonData.demoUrl"
+            target="_blank"
+            class="project-link project-link-demo"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Demo
+          </a>
+        </div>
+
+        <!-- Features list -->
+        <div v-if="jsonData.features" v-show="show" class="features-container">
+          <h3 class="features-title">Características principales:</h3>
+          <ul class="features-list">
+            <li v-for="(feature, index) in jsonData.features" :key="index" v-html="feature"></li>
+          </ul>
+        </div>
+
         <div
           v-show="show"
           class="secondary-paragraph-container"
@@ -129,6 +178,110 @@ section:hover {
   text-align: justify;
 }
 
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.tech-badge {
+  padding: 5px 12px;
+  border: 1.5px solid;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: rgba(74, 158, 255, 0.1);
+  color: #4a9eff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: rgba(74, 158, 255, 0.2);
+  border-color: #4a9eff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.2);
+}
+
+.project-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.project-link-demo {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border-color: rgba(76, 175, 80, 0.3);
+}
+
+.project-link-demo:hover {
+  background-color: rgba(76, 175, 80, 0.2);
+  border-color: #4caf50;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.features-container {
+  margin: 20px 0;
+}
+
+.features-title {
+  color: #ffffff;
+  font-size: 1.05em;
+  margin-bottom: 10px;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.features-list li {
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #c0c0c0;
+  line-height: 1.6;
+}
+
+.features-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4a9eff;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.features-list li :deep(strong) {
+  color: #ffffff;
+}
+
 .secondary-paragraph-container p {
   color: #c0c0c0;
 }
@@ -203,6 +356,14 @@ section:hover {
   .text-container b,
   .text-container p {
     text-align: center;
+  }
+
+  .tech-badges {
+    justify-content: center;
+  }
+
+  .project-links {
+    justify-content: center;
   }
 }
 

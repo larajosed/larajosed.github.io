@@ -2,18 +2,18 @@
   <transition name="slide-up">
     <div v-if="show" class="hero-menu" :style="menuPositionStyle">
       <div class="menu-items">
-        <a @click="navigateToSection('/about')" class="menu-item">SOBRE MÍ</a>
-        <a @click="navigateToSection('/training')" class="menu-item"
-          >FORMACIÓN</a
-        >
         <a @click="navigateToSection('/experience')" class="menu-item"
-          >EXPERIENCIA PROFESIONAL</a
+          >EXPERIENCIA</a
         >
         <a @click="navigateToSection('/projects')" class="menu-item"
           >PROYECTOS</a
         >
         <a @click="navigateToSection('/technologies')" class="menu-item"
           >TECNOLOGÍAS</a
+        >
+        <a @click="navigateToSection('/about')" class="menu-item">SOBRE MÍ</a>
+        <a @click="navigateToSection('/training')" class="menu-item"
+          >FORMACIÓN</a
         >
       </div>
     </div>
