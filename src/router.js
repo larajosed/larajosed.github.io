@@ -13,6 +13,10 @@ const routes = [
     component: HomeView,
   },
   {
+    path: "/inicio",
+    redirect: "/",
+  },
+  {
     path: "/experience",
     name: "experience",
     component: Experience,

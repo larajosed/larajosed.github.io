@@ -101,6 +101,9 @@ export default {
     <transition name="slide-fade">
       <div class="container-fluid" v-if="show" ref="navbarMenu">
         <div class="navbar-nav">
+          <router-link to="/" class="text" @click="closeMenu()">
+            <div class="nav-item">INICIO</div>
+          </router-link>
           <router-link to="/experience" class="text" @click="closeMenu()">
             <div class="nav-item">EXPERIENCIA</div>
           </router-link>

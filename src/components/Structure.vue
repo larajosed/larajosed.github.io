@@ -74,7 +74,7 @@ export default {
               <polyline points="15 3 21 3 21 9"></polyline>
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
-            Demo
+            Visitar web
           </a>
         </div>
 
@@ -234,15 +234,17 @@ section:hover {
 }
 
 .project-link-demo {
-  background-color: rgba(76, 175, 80, 0.1);
-  color: #4caf50;
-  border-color: rgba(76, 175, 80, 0.3);
+  background-color: #22c55e;
+  color: #0b1a10;
+  border-color: #22c55e;
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.35);
 }
 
 .project-link-demo:hover {
-  background-color: rgba(76, 175, 80, 0.2);
-  border-color: #4caf50;
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+  background-color: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.45);
 }
 
 .features-container {

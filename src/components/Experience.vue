@@ -6,6 +6,25 @@ export default {
   data() {
     return {
       arrExperience: [
+         {
+          logo: "images/pqtv.png",
+          title: "Desarrollador Full Stack - Freelance",
+          mainParagraph: [
+            "<div class='responsibilities-section'><strong>Responsabilidades principales:</strong></div>",
+            "<ul class='achievements-list'>" +
+              "<li>Desarrollo y maquetación de interfaz de usuario responsive utilizando <strong>React</strong>.</li>" +
+              "<li>Configuración y personalización del backend de gestión de contenido y catalogo utilizando WordPress con WooCommerce.</li>" +
+              "<li>Diseñe toda la aplicación, creando prototipos funcionales desde cero utilizando Figma.</li>" +
+              "<li>Gestión del entorno de desarrollo mediante contenedores (Docker).</li>" +
+              "<li>Integracion de una pasarela de pago (Stripe) para procesar transacciones.</li>" +
+              "</ul>",
+            "<div class='tech-stack'><strong>Stack tecnológico:</strong> React · WordPress · WooCommerce · Figma · Docker · Stripe </div>",
+          ],
+
+          date: "Nov. 2025 - Ene. 2026",
+
+          country: "Madrid, España",
+        },
         {
           logo: "images/sngular-logo-vector.png",
           title: "Desarrollador Full Stack - Sngular",

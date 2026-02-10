@@ -7,6 +7,44 @@ export default {
     return {
       arrProjects: [
         {
+          logo: "images/pqtv.png",
+          title: "Peluqueo Que Te Veo- Tienda Online de Pelucas y Cursos",
+          mainParagraph:
+            "E-commerce con catálogo de pelucas y cursos, orientado a una experiencia de compra completa y responsive.",
+          demoUrl: "https://peluqueoqueteveo.es/",
+          technologies: [
+            { name: "React", color: "#61dafb" },
+            { name: "WordPress", color: "#21759b" },
+            { name: "WooCommerce", color: "#96588a" },
+            { name: "Figma", color: "#f24e1e" },
+            { name: "Docker", color: "#2496ed" },
+            { name: "Stripe", color: "#635bff" },
+          ],
+          features: [
+            "<strong>Secciones claras:</strong> Apartados diferenciados de Pelucas y Cursos",
+            "<strong>Cards de producto:</strong> Selección individual de artículos",
+            "<strong>Carrito:</strong> Gestión de productos y flujo de compra",
+            "<strong>Checkout:</strong> Formularios de envío y pago",
+          ],
+          secondaryParagraph: [
+            "Desarrollo y maquetación de interfaz de usuario responsive con <b>React</b>.",
+            "Se configuró y personalizó el backend de gestión de contenido y catálogo con <b>WordPress</b> y <b>WooCommerce</b>.",
+            "Se diseñó toda la aplicación creando prototipos funcionales desde cero en <b>Figma</b>.",
+            "Gestión del entorno de desarrollo mediante contenedores con <b>Docker</b>.",
+            "Integración de pasarela de pago <b>Stripe</b> para el procesamiento de transacciones.",
+          ],
+          images: [
+            "images/peluqueo/peluquehome.png",
+            "images/peluqueo/pelucas1.png",
+            "images/peluqueo/carrito.PNG",
+            "images/peluqueo/cart.png",
+            "images/peluqueo/pago.png",
+            "images/peluqueo/Contacto.PNG",
+          ],
+          date: "Nov. 2025 - Ene. 2026",
+          country: "Madrid, España",
+        },
+        {
           logo: "images/nutrition.png",
           title: "Nutrition's Digital Assistant",
           mainParagraph:
@@ -51,7 +89,7 @@ export default {
           technologies: [
             { name: "Angular 11", color: "#dd0031" },
             { name: "Node.js", color: "#339933" },
-            { name: "Express", color: "#000000" },
+            { name: "Express", color: "#90125b" },
             { name: "MySQL", color: "#4479a1" },
             { name: "Bootstrap", color: "#7952b3" },
           ],
