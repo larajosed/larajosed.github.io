@@ -3,7 +3,7 @@ import '../css/Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar el menú móvil
+  const [isOpen, setIsOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,12 +14,11 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Función para alternar el menú
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Función para cerrar el menú al hacer clic en un enlace (muy importante en mobile UX)
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -46,7 +45,6 @@ const Navbar = () => {
           <span className="bar"></span>
         </button>
 
-        {/* Lista de enlaces con clase condicional 'active' */}
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           {navItems.map((item, index) => (
             <li key={index}>
