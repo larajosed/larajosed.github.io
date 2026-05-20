@@ -28,24 +28,12 @@ const SobreMi = () => {
         <h2 className="funnel-display-300">Sobre mi</h2>
         <div className="header-line"></div>
       </div>
-
       <div className="about-container">
-        
         <div className="about-text-full">
-          <p>
-            Mi camino en el desarrollo de software se define por una curiosidad constante y la resolución de problemas reales. 
-            No solo escribo código; <strong>construyo productos que impulsan negocios.</strong>
-          </p>
-          <p>
-            He tenido la oportunidad de digitalizar ecosistemas comerciales completos con <strong>React</strong> con <strong>WordPress y WooCommerce</strong> y pagos seguros mediante <strong>Stripe</strong>. 
-           También diseño soluciones <strong>SaaS multi-tenant </strong> 
-             desde cero con <strong>Spring Boot</strong>. Realizo todo el ciclo de vida del producto: desde el diseño de 
-            prototipos funcionales en Figma hasta el despliegue y mantenimiento de sistemas robustos.
-          </p>
-          <p>
-           Aplico <strong>TDD (Jest/JUnit)</strong> para garantizar software fiable, 
-            utilizo <strong>IA</strong> para acelerar ciclos de entrega y diseño. Aplico estrategias de <strong>internacionalización (i18n) pensando en un mercado global.</strong>.
-          </p>
+        <p>Mi camino en el desarrollo de software se define por una curiosidad constante y las ganas de resolver problemas reales.</p>
+        <p>A lo largo de mi experiencia, he ayudado tanto a empresas como a emprendedores a dar el salto al mundo digital. Puedo crear desde una tienda online moderna y automatizada para vender tus productos de forma segura, hasta plataformas web complejas y personalizadas desde cero. Me encargo de todo el proceso: diseño la idea visual, programo la página y la dejo lista y funcionando en internet.</p>
+        <p>Trabajo con herramientas modernas, aplico estándares de calidad para que tu web sea rápida y segura, y utilizo inteligencia artificial para acelerar los tiempos de entrega. Además, diseño pensando en el futuro y en un mercado global, adaptando las plataformas para que funcionen en diferentes idiomas.</p>
+        <p>Ya sea que necesites una página web para impulsar tu propio negocio o un desarrollador preparado para sumarse al equipo de tu empresa, estoy listo para aportar valor desde el primer día.</p>
         </div>
 
         <div className="about-stack-horizontal">
