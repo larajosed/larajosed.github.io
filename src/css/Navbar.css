@@ -1,3 +1,7 @@
+/* ==========================================================================
+   NAVBAR - ESTILO GLOBAL & ESCRITORIO
+   ========================================================================== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -7,9 +11,19 @@
   display: flex;
   align-items: center;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.02); /* Casi invisible */
-  backdrop-filter: blur(15px); /* Efecto cristal más fuerte */
+  background: rgba(255, 255, 255, 0.02); /* Casi invisible al inicio */
+  backdrop-filter: blur(15px); /* Efecto cristal (Glassmorphism) */
+  -webkit-backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Estado cuando el usuario hace scroll (activado por tu lógica de React) */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.85); /* Fondo más sólido para legibilidad */
+  height: 65px; /* Reducción sutil de altura para dinamismo visual */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
 }
 
 .nav-container {
@@ -17,25 +31,18 @@
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Modificado para separar extremos (Logo <-> Links) */
   align-items: center;
 }
 
-.logo-dot {
-  width: 10px;
-  height: 10px;
-  background: #000;
-  display: block;
-  transform: rotate(45deg);
-  border: 1px solid rgba(0,0,0,0.1);
-}
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: clamp(15px, 3vw, 40px); /* Espaciado flexible según pantalla */
+  gap: clamp(15px, 3vw, 40px); /* Espaciado fluido según tamaño de pantalla */
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .nav-links a {
@@ -47,9 +54,10 @@
   letter-spacing: 1.5px;
   transition: all 0.4s ease;
   position: relative;
+  display: inline-block;
 }
 
-/* Subrayado animado sutil */
+/* Subrayado animado sutil (Solo en Escritorio) */
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -57,7 +65,7 @@
   height: 1px;
   bottom: -5px;
   left: 0;
-  background-color: #817a7a5f;
+  background-color: #000;
   transition: width 0.3s ease;
 }
 
@@ -69,6 +77,7 @@
   width: 100%;
 }
 
+/* Estilo para Botón de Llamada a la Acción (CTA) */
 .btn-nav {
   background: transparent;
   color: #000;
@@ -85,4 +94,115 @@
 .btn-nav:hover {
   background: #000;
   color: #fff;
+}
+
+/* Ocultar el botón hamburguesa por defecto en pantallas de escritorio */
+.menu-toggle {
+  display: none;
+}
+
+
+/* ==========================================================================
+   VERSIÓN MÓVIL & TABLET (Media Query Responsive)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+  
+  /* Ajuste de contenedor en móvil */
+  .nav-container {
+    justify-content: space-between;
+    width: 88%; /* Un poco más estrecho para un look móvil más limpio */
+  }
+
+  /* Transformación de la lista a panel vertical premium a pantalla completa */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Totalmente oculto a la derecha inicialmente */
+    width: 100%;
+    height: 100vh; /* Alto completo de la ventana del dispositivo */
+    background: rgba(255, 255, 255, 0.98); /* Fondo casi opaco para lectura óptima */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px; /* Espaciado amplio ergonómico para el dedo (UX) */
+    
+    transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); /* Animación tipo App Nativa */
+    z-index: 999; /* Justo debajo del botón de cierre */
+  }
+
+  /* Estado activo cuando tu estado de React añade la clase '.active' */
+  .nav-links.active {
+    right: 0; /* Se desliza elegantemente al centro */
+  }
+
+  /* Enlaces de menú adaptados para móvil */
+  .nav-links a {
+    font-size: 1.1rem; /* Texto incrementado para legibilidad móvil veloz */
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* Desactivamos el underline en móviles para no recargar visualmente el diseño */
+  .nav-links a::after {
+    display: none;
+  }
+
+  /* Comportamiento táctil en móvil */
+  .nav-links a:hover, 
+  .nav-links a:active {
+    color: #000;
+    transform: scale(1.05); /* Microinteracción premium de crecimiento */
+  }
+
+  /* Adaptación de botones dentro del menú en formato móvil */
+  .btn-nav {
+    margin-top: 10px;
+    padding: 12px 35px;
+    font-size: 0.85rem;
+  }
+
+  /* ------------------------------------------------------------------------
+     BOTÓN HAMBURGUESA / LÍNEAS ANIMADAS
+     ------------------------------------------------------------------------ */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Siempre por encima del panel vertical del menú */
+    padding: 0;
+  }
+
+  .menu-toggle .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform-origin: left center;
+  }
+
+  /* Transformaciones controladas cuando React inyecta la clase '.open' */
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(-2px) rotate(45deg);
+  }
+
+  .menu-toggle.open .bar:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(2px) rotate(-45deg);
+  }
 }
